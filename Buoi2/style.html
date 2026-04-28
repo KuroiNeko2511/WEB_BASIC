@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /* important-> inline ->id -> class -> universal  */
+        *{
+            margin: 50px !important;
+            /* padding: 0; */
+            box-sizing: border-box;
+        }
+        .box {
+
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+        }
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            color: white; 
+            margin: 20px;
+            text-align: center;
+            align-content: center;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- một số thẻ block  -->
+    <!-- h1 - h6, p , ul ,li, ol, table,... -->
+    <!-- mốt số thẻ inline  -->
+    <!-- a, i,b,u,br,span -->
+
+    <!-- img, audio,video,...button,input -->
+
+    <span class="conteiner">
+        <!-- inline css  -->
+        <p style="background-color: red; width: 200px; height: 100px;">thẻ block</p>
+        <a href="#" style="width: 200px; height: 100px;">thẻ inline</a>
+        <a href="#">thẻ inline</a>
+        <a href="#">thẻ inline</a>
+        <hr>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3school" style="width: 200px; height: 100px;">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3school" style="width: 200px; height: 100px;">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3school" style="width: 200px; height: 100px;">
+
+    </span>
+    <div id="box1">
+            This is a styled box.
+    </div>
+    <div class="box">
+            This is a styled box.
+    </div>
+</body>
+</html>

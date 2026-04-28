@@ -1,0 +1,16 @@
+        html{
+            font-size: 20px;
+        }
+        .conteiner{
+            font-size: 15px;
+            background-color: #111;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid black;
+            /* padding: 10em; */
+            /* margin: 10px; */
+            /* margin: 10rem; */
+        }

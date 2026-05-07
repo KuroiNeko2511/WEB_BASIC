@@ -1,0 +1,37 @@
+color picker chọn màu cho css
+ẩn phần tử 3 cách
+	display: none; xóa ptu
+	visibility: hidden; vẫn còn chỉ ẩn
+	opacity: 1->100% độ đậm
+.box1, .box2{
+///
+} 
+<div class="box1"></div>
+<div class="box2"></div>
+
+selection 
+
+vừa có h1 vừa có id sẽ in ra <<h1#id1>>
+<<.parent p>> tất cả p trong parent
+<<.parent > p>> p trực tiếp parent
+<<.parent + p>> p liền kề parent
+<<.parent ~ p>> p cùng cấp sau parent
+
+3 dạng fill ảnh
+	fill kéo ra
+	contain chứa
+	cover zoom ra
+ box sizing  không có margin( thuộc tính)
+	context-box  gốc ở context
+	border box   gốc ở rìa border
+
+box shadow  ứng dụng ->di chuột vào đồ bóng
+background-image: url() lấy ảnh(s) làm nền
+background-repeat: norepeat; không lặp lại
+background-position: ...;
+
+display: flex;
+justify-content: start... end   center  space-between space-around; căn lề trục x
+	align-items											căn lề trục y
+
+

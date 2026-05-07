@@ -1,0 +1,51 @@
+
+* {
+    margin: 20px;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    margin-inline: 10px;
+}
+.block1{
+        width: 200px;
+            height: 50px;
+            color: red;
+            text-align: center;
+            align-content: center;
+            border: 2px solid red;
+            border-radius: 10px;
+            margin-left: 250px;         
+}
+h2 {
+    display: flex;
+    justify-content: space-between;
+}
+.logo1{
+    display: flex;
+}
+.icon1{
+    display: flex;
+}
+.underlinered{
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline red;
+}
+.container2{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-left: -20px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+.vuongtron{
+    /* bo mãi nó vẫn như z */
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border: 3px solid black;
+    border-radius: 30px;
+}

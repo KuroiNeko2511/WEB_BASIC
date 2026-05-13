@@ -1,0 +1,25 @@
+    .box1{
+    width: 200px;
+    height: 50px;
+    }
+    .box2{
+    width: 200px;
+    height: 50px;
+    }
+    .static{
+    position: static;
+    }
+    /* thay đổi vị trí hiển thị nhưng kiểu không thay đổi chỉ số vẫn nằm trên cái trang*/
+    .relative{
+    position: relative;
+    }
+    /* lơ lửng ở trên ví dụ như thanh... trên facebook  cố định trên trang web*/
+    /* dùng cho thẻ div nhỏ */
+    .absolute{
+    position: absolute; 
+    }
+/* cố định vị trí so với cửa sổ trình duyệt ảnh hưởng toàn trang web */
+/* dùng cho các thành phần cần cố định như thanh công cụ */
+    .fixed{
+    position: fixed;
+    }

@@ -22,7 +22,7 @@ vừa có h1 vừa có id sẽ in ra <<h1#id1>>
 	contain chứa
 	cover zoom ra
  box sizing  không có margin( thuộc tính)
-	context-box  gốc ở context
+	context-box  gốc ở content
 	border box   gốc ở rìa border
 
 box shadow  ứng dụng ->di chuột vào đồ bóng
@@ -31,7 +31,9 @@ background-repeat: norepeat; không lặp lại
 background-position: ...;
 
 display: flex;
-justify-content: start... end   center  space-between space-around; căn lề trục x
-	align-items											căn lề trục y
+justify-content: start  end   center  space-between space-around; căn lề trục x
+	align-items						    căn lề trục y
 
+bt thiếu :padding làm cho cái nút đẹp hơn
 
+overflow: hidden

@@ -34,18 +34,18 @@ h2 {
 }
 .container2{
     display: flex;
-    height: 100px;
-    width: 100%;
-    margin-left: -20px;
-    margin-top: -40px;
+    height: 400px;
+    width: 350px;
+    /* margin-left: -20px;
+    margin-top: -40px; */
     margin-bottom: 50px;
 }
 .vuongtron{
-    /* bo mãi nó vẫn như z */
     width: 100px;
     height: 30px;
     text-align: center;
     align-content: center;
     border: 3px solid black;
     border-radius: 30px;
+    padding: 5px;
 }

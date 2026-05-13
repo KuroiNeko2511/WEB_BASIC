@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            transition: 3s linear; 
+            /* ease nhanh dần ease-out chậm dần */
+        }
+        /* di vào */
+        .button:hover{
+            background-color: red;
+            color: white;
+            /* transform: scale(1.1); */
+            transform: translateY(100px);
+        } 
+        /* click thả là mất*/
+        .button:active{
+            background-color: blue;
+            color: white;
+        }
+        /* click để nguyên */
+        .button:focus{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click Me</button>
+</body>
+</html>

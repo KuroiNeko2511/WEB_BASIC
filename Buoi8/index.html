@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button>
+    <div id="div1">This is a div element.</div>
+    <div class="box1">aaaaaaaaaaaa</div>
+    <div class="box1">bbbbbbbbbb</div>
+    <div class="box1">cccccccccc</div>
+    <script>
+        console.log('Hello, world!');
+    </script>
+    <!-- <script src="style.js">
+
+    </script> -->
+    <script>
+        //trỏ đến 1 item mà ta muốn thay đổi
+        let title1 = document.getElementById("div1"); //id
+        let box1 = document.querySelector(".box1"); //class, tag cái duy nhất nếu ko có All
+        let boxAll = document.querySelectorAll(".box1"); //class, tag tất cả
+
+
+        let button = document.querySelector("button"); //tag
+        button.addEventListener("click", function(){
+            alert("Button clicked!");
+        })
+        //thay đổ phần tử
+        //title1.innerText = "Hello"; //chinh sửa nội dung text
+        //title1.innerHTML = "<b>Hell<b>"; //chinh sửa nội dung html thay 1 thẻ
+        //title1.style.color = "red"; //chinh sửa css
+    </script>
+</body>
+</html>

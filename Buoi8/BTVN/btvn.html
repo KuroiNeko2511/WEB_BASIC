@@ -9,9 +9,9 @@
 <body>
     <div class="container">
         <div class="box1">
-            <input placeholder="Nhập mã màu">
-            <input placeholder="Nhập chiều cao (px)">
-            <input placeholder="Nhập chiều rộng (px)">
+            <input class="color-input" placeholder="Nhập mã màu">
+            <input class="height-input" placeholder="Nhập chiều cao (px)">
+            <input class="width-input" placeholder="Nhập chiều rộng (px)">
         </div>
         <button class="box2">
             Submit
@@ -23,9 +23,9 @@
     <script>
         let button = document.querySelector('.box2');
         button.addEventListener('click', function() {
-            let color = document.querySelector('input:nth-child(1)').value;
-            let height = document.querySelector('input:nth-child(2)').value;
-            let width = document.querySelector('input:nth-child(3)').value;
+            let color = document.querySelector('.color-input');
+            let height = document.querySelector('.height-input');
+            let width = document.querySelector('.width-input');
 
             let boxColor = document.querySelector('.boxColor');
             boxColor.style.backgroundColor = color;

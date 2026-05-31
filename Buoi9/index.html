@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- click, input, change, mouseover, mouseout -->
+    <div>A</div>
+    <div>B</div>
+    
+    <p>Paragraph</p>
+    <div>C</div>
+    <button>Click me</button>
+    <script>
+        //lấy thẻ tại vị trí ... trước sau đó mới ktra
+        
+        let div2 = document.querySelector("div:nth-child(2)");
+        // selector :nth-child(n) : chọn phần tử con thứ n của một phần tử cha, bất kể loại phần tử nào
+        // div div:nth-child(2) : chọn phần tử con thứ 2 của tất cả các phần tử div
+        //kiểm tra có phải là thẻ div hay không ... trước rồi lấy sau
+        let div3 = document.querySelector("div:nth-of-type(3)");
+        div2.style.color = "red";
+        div3.style.color = "blue";
+   </script>
+
+</body>
+</html>

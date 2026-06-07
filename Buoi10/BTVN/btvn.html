@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./btvn.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Toolbar">
+            <div class="menu">
+                <button class="menu-btn">O</button>
+            </div>
+            <div class="scroll">
+                <div class="btn">Button 2</div>
+                <div class="btn">Button 3</div>
+                <div class="btn">Button 4</div>
+                <div class="btn">Button 5</div>
+                <div class="btn">Button 6</div>
+                <div class="btn">Button 7</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const buttons = document.querySelectorAll('.btn');
+        menuBtn.addEventListener('click', () => {
+            menuBtn.textContent = menuBtn.textContent === 'O' ? 'X' : 'O';
+            if (menuBtn.textContent === 'X') {
+                buttons.forEach((btn, index) => {
+                btn.style.top = `${(index) * 30}px`;
+                btn.style.transition = `${index * 0.1}s`;
+                btn.style.opacity = '1';
+            });
+            } else {
+                buttons.forEach((btn, index) => {
+                btn.style.top = '0px';
+                btn.style.transition = `${(buttons.length - index) * 0.1}s`;
+                btn.style.opacity = '0';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

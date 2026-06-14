@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.container {
+    margin-inline: 10px;
+}
+.block1{
+        width: 200px;
+            height: 50px;
+            color: red;
+            text-align: center;
+            align-content: center;
+            border: 2px solid red;
+            border-radius: 10px;   
+}
+h2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.logo1{
+    display: flex;
+}
+.icon1{
+    display: flex;
+    size: 20px;
+}
+.underlinered{
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline red;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.container3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+}
+.vuongtron{
+    padding: 8px 16px;
+    text-align: center;
+    align-content: center;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 5px;
+}
+.CoreSkill,
+.OtherSkill{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 50%;
+}
+.box{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            margin: 20px;
+        }
+.para1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 50%;
+}
+.nutvuongtron{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+}
+i{
+    color: red;
+}
+i:hover{
+    color: black;   
+}
+.hiddenclass{
+    font-size: 30px;
+}
+#inputOtherSkill,
+#inputCoreSkill{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;   
+}
+button{
+    width: 100px;
+    height: 35px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}

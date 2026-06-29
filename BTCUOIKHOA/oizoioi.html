@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container1_nappa">
+    <div class="logo">
+      <img alt="" role="presentation"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDgwIDMwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9Il8yMDAyMDQ2NTA4X19hIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjIxIC0uNjczNTMgLjI1NDUgLjA3OTM1IC41MTIgMS4xMDkpIj48c3RvcCBzdG9wLWNvbG9yPSIjNjQyMEZGIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjQyMEZGIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iXzIwMDIwNDY1MDhfX2IiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguNTg0IC4xNjIxNSAtLjM3NzEgMS4zNTgyIC4wMjQgLjY2NikiPjxzdG9wIG9mZnNldD0iLjI1IiBzdG9wLWNvbG9yPSIjMDBDNENDIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDBDNENDIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iXzIwMDIwNDY1MDhfX2MiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguMjk0MjUgLS43MzkgLjM1NTUgLjE0MTU1IC40MjcgMSkiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fZCIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC4zOTE1IC0uNTk4NjkgLjQ3NDMgLjMxMDE2IC4wMjggMSkiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fZSIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDM0LjU5MyAtLjEgLjIpIHNjYWxlKDEuMDMyNTUgMi44MDY4OCkiPjxzdG9wIHN0b3AtY29sb3I9IiMwMEM0Q0MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMEM0Q0MiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdHRlcm4gaWQ9Il8yMDAyMDQ2NTA4X19mIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+PHBhdGggZmlsbD0iIzdEMkFFNyIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19hKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19iKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19jKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19kKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19lKSIgZD0iTTAgMGgxdjFIMHoiLz48L3BhdHRlcm4+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjXzIwMDIwNDY1MDhfX2YpIiBkPSJNNzkuNDQ0IDE4LjA5NmMtLjEzNiAwLS4yNi4wODgtLjMyNC4yNzItLjgyIDIuMzQtMS45MjggMy43MzItMi44NCAzLjczMi0uNTI0IDAtLjczNi0uNTg0LS43MzYtMS41IDAtMi4yOTIgMS4zNzItNy4xNTIgMi4wNjQtOS4zNjguMDgtLjI2OC4xMzItLjUwOC4xMzItLjcxMiAwLS42NDQtLjM1Mi0uOTYtMS4yMjQtLjk2LS45NCAwLTEuOTUyLjM2OC0yLjkzNiAyLjA5Mi0uMzQtMS41Mi0xLjM2OC0yLjE4NC0yLjgwNC0yLjE4NC0xLjY2IDAtMy4yNjQgMS4wNjgtNC41ODQgMi44LTEuMzIgMS43MzItMi44NzIgMi4zLTQuMDQgMi4wMi44NC0yLjA1NiAxLjE1Mi0zLjU5MiAxLjE1Mi00LjczMiAwLTEuNzg4LS44ODQtMi44NjgtMi4zMTItMi44NjgtMi4xNzIgMC0zLjQyNCAyLjA3Mi0zLjQyNCA0LjI1MiAwIDEuNjg0Ljc2NCAzLjQxNiAyLjQ0NCA0LjI1Ni0xLjQwOCAzLjE4NC0zLjQ2NCA2LjA2NC00LjI0NCA2LjA2NC0xLjAwOCAwLTEuMzA0LTQuOTMyLTEuMjQ4LTguNDYuMDM2LTIuMDI0LjIwNC0yLjEyOC4yMDQtMi43NCAwLS4zNTItLjIyOC0uNTkyLTEuMTQ0LS41OTItMi4xMzYgMC0yLjc5NiAxLjgwOC0yLjg5NiAzLjg4NGExMC4yMzMgMTAuMjMzIDAgMCAxLS4zNjggMi4zMzJjLS44OTIgMy4xODQtMi43MzIgNS42LTMuOTMyIDUuNi0uNTU2IDAtLjcwOC0uNTU2LS43MDgtMS4yODQgMC0yLjI5MiAxLjI4NC01LjE1NiAxLjI4NC03LjYgMC0xLjc5Ni0uNzg4LTIuOTMyLTIuMjcyLTIuOTMyLTEuNzQ4IDAtNC4wNiAyLjA4LTYuMjQ4IDUuOTc2LjcyLTIuOTg0IDEuMDE2LTUuODcyLTEuMTE2LTUuODcyQTIuODg2IDIuODg2IDAgMCAwIDM2IDkuOTE2YS43NTIuNzUyIDAgMCAwLS40MzIuNzI4Yy4yMDQgMy4xNzYtMi41NiAxMS4zMTItNS4xOCAxMS4zMTItLjQ3NiAwLS43MDgtLjUxNi0uNzA4LTEuMzQ4IDAtMi4yOTYgMS4zNjgtNy4xNDQgMi4wNTYtOS4zNjQuMDg4LS4yODguMTM2LS41MzYuMTM2LS43NTIgMC0uNjA4LS4zNzYtLjkyLTEuMjI4LS45Mi0uOTM2IDAtMS45NTIuMzU2LTIuOTMyIDIuMDgtLjM0NC0xLjUyLTEuMzcyLTIuMTg0LTIuODA4LTIuMTg0LTIuMzU2IDAtNC45ODggMi40OTItNi4xNDQgNS43NC0xLjU0OCA0LjMzNi00LjY2OCA4LjUyNC04Ljg2OCA4LjUyNC0zLjgxMiAwLTUuODI0LTMuMTcyLTUuODI0LTguMTg0QzQuMDY4IDguMzEyIDkuMzggMi40IDEzLjMyIDIuNGMxLjg4NCAwIDIuNzg0IDEuMiAyLjc4NCAzLjA0IDAgMi4yMjgtMS4yNDQgMy4yNjQtMS4yNDQgNC4xMTIgMCAuMjYuMjE2LjUxNi42NDQuNTE2IDEuNzEyIDAgMy43MjgtMi4wMTIgMy43MjgtNC43NTZTMTcuMDA0LjU2IDEzLjA2NC41NkM2LjU1Mi41NiAwIDcuMTEyIDAgMTUuNTA4YzAgNi42OCAzLjI5NiAxMC43MDggOC45OTYgMTAuNzA4IDMuODg4IDAgNy4yODQtMy4wMjQgOS4xMTYtNi41NTIuMjA4IDIuOTI0IDEuNTM2IDQuNDUyIDMuNTYgNC40NTIgMS44IDAgMy4yNTYtMS4wNzIgNC4zNjgtMi45NTYuNDI4IDEuOTcyIDEuNTY0IDIuOTM2IDMuMDQgMi45MzYgMS42OTIgMCAzLjEwOC0xLjA3MiA0LjQ1Ni0zLjA2NC0uMDIgMS41NjQuMzM2IDMuMDM2IDEuNjkyIDMuMDM2LjY0IDAgMS40MDQtLjE0OCAxLjU0LS43MDggMS40MjgtNS45MDQgNC45NTYtMTAuNzI0IDYuMDM2LTEwLjcyNC4zMiAwIC40MDguMzA4LjQwOC42NzIgMCAxLjYwNC0xLjEzMiA0Ljg5Mi0xLjEzMiA2Ljk5MiAwIDIuMjY4Ljk2NCAzLjc2OCAyLjk1NiAzLjc2OCAyLjIwOCAwIDQuNDUyLTIuNzA0IDUuOTQ4LTYuNjU2LjQ2OCAzLjY5MiAxLjQ4IDYuNjcyIDMuMDY0IDYuNjcyIDEuOTQ0IDAgNS4zOTYtNC4wOTIgNy40ODgtOC40MjQuODIuMTA0IDIuMDUyLjA3NiAzLjIzNi0uNzYtLjUwNCAxLjI3Ni0uOCAyLjY3Mi0uOCA0LjA2OCAwIDQuMDIgMS45MiA1LjE0OCAzLjU3MiA1LjE0OCAxLjc5NiAwIDMuMjUyLTEuMDcyIDQuMzY4LTIuOTU2LjM2OCAxLjcgMS4zMDggMi45MzIgMy4wMzYgMi45MzIgMi43MDQgMCA1LjA1Mi0yLjc2NCA1LjA1Mi01LjAzMiAwLS42LS4yNTYtLjk2NC0uNTU2LS45NjR6TTIzLjMyIDIxLjg4OGMtMS4wOTIgMC0xLjUyLTEuMS0xLjUyLTIuNzQgMC0yLjg0OCAxLjk0OC03LjYwNCA0LjAwOC03LjYwNC45IDAgMS4yNCAxLjA2IDEuMjQgMi4zNTYgMCAyLjg5Mi0xLjg1MiA3Ljk4OC0zLjcyOCA3Ljk4OHptMzcuNDA0LTguNWMtLjY1Mi0uNzc2LS44ODgtMS44MzItLjg4OC0yLjc3MiAwLTEuMTYuNDI0LTIuMTQuOTMyLTIuMTRzLjY2NC41LjY2NCAxLjE5NmMwIDEuMTY0LS40MTYgMi44NjQtLjcwOCAzLjcxNnptOC40NjggOC41Yy0xLjA5MiAwLTEuNTItMS4yNjQtMS41Mi0yLjc0IDAtMi43NDggMS45NDgtNy42MDQgNC4wMjQtNy42MDQuOSAwIDEuMjIgMS4wNTIgMS4yMiAyLjM1NiAwIDIuODkyLTEuODIgNy45ODgtMy43MjQgNy45ODh6Ii8+PC9zdmc+" />
+    </div>
+    <div class="more">
+      <button class="design btn_more">
+        Design
+        <div class="hidden hidden_design">
+          <div>
+            Digital design
+            <div>Sheets</div>
+            <div>Docs</div>
+            <div>Whiteboards</div>
+            <div>Presentations</div>
+            <div>Social</div>
+            <div>Photo Editor</div>
+            <div>Videos</div>
+            <div>Print</div>
+            <div>Websites</div>
+            <div>PDF Editor</div>
+          </div>
+          <div>
+            Print design
+            <div>Business cards</div>
+            <div>Invitations</div>
+            <div>Flyers</div>
+            <div>Brochures</div>
+            <div>T-shirts</div>
+            <div>Mugs</div>
+            <div>Stickers</div>
+            <div>Hoodies</div>
+            <div>Labels</div>
+            <div>Posters</div>
+          </div>
+          <div>
+            Images and photos
+            <div>Photo editor</div>
+            <div>Background remover</div>
+            <div>Photo collages</div>
+            <div>Mockups</div>
+            <div>Image enhancer</div>
+            <div>AI image generator</div>
+            <div>AI photo editor</div>
+            <div>AI art generator</div>
+            <div>Draw</div>
+            <div>Logos</div>
+          </div>
+          <div>
+            Video and audio
+            <div>Video editor</div>
+            <div>YouTube video editor</div>
+            <div>Video trimmer</div>
+            <div>Online video recorder</div>
+            <div>Convert videos to MP4</div>
+            <div>AI video generator</div>
+            <div>Text to speech voiceover</div>
+            <div>AI music generator</div>
+            <div>AI voice generator</div>
+          </div>
+        </div>
+      </button>
+
+      <button class="product btn_more">
+        Product
+        <div class="hidden hidden_product">
+          <div>
+            Product
+            <div>Latest launches</div>
+            <div>Visual Suite</div>
+            <div>Brand management</div>
+            <div>Product features</div>
+            <div>Apps Marketplace</div>
+            <div>Templates Marketplace</div>
+          </div>
+          <div>
+            Canva AI
+            <div>Magic Layers</div>
+            <div>Canva AI assistant</div>
+            <div>Canva Code</div>
+            <div>Magic Resize</div>
+            <div>Magic Animate</div>
+            <div>Magic Write</div>
+            <div>Translate</div>
+            <div>Magic Insights</div>
+            <div>Magic Formulas</div>
+            <div>All Canva AI</div>
+          </div>
+        </div>
+      </button>
+
+      <button class="plans btn_more">
+        Plans
+        <div class="hidden hidden_plans">
+          <div>
+            Plans
+            <div>Compare pricing</div>
+            <div>Pro</div>
+            <div>Business</div>
+            <div>Enterprise</div>
+            <div>Nonprofits</div>
+            <div>Education</div>
+            <div>Higher education</div>
+          </div>
+        </div>
+      </button>
+
+      <button class="business btn_more">
+        Business
+        <div class="hidden hidden_business">
+          <div>
+            Canva for business
+            <div>Contact Sales</div>
+            <div>Demo video</div>
+          </div>
+          <div>
+            Business plans
+            <div>Canva Enterprise</div>
+            <div>Canva Business</div>
+            <div>All Canva for business</div>
+          </div>
+          <div>
+            Solutions
+            <div>Marketing</div>
+            <div>Sales</div>
+            <div>IT</div>
+            <div>Creatives</div>
+            <div>Higher education</div>
+            <div>Real estate</div>
+            <div>Government</div>
+            <div>Small business</div>
+            <div>All solutions</div>
+          </div>
+          <div>
+            Features
+            <div>Brand management</div>
+            <div>Content creation</div>
+            <div>Team management</div>
+            <div>Security and SSO</div>
+            <div>Integration apps</div>
+            <div>Brand templates</div>
+            <div>All features</div>
+          </div>
+          <div>
+            Resources
+            <div>Case studies</div>
+            <div>Enterprise onboarding</div>
+            <div>Partners directory</div>
+          </div>
+          <div>
+            Reports
+            <div>Marketing and AI</div>
+            <div>Visual Comms</div>
+            <div>TEI of Canva Enterprise</div>
+            <div>All resources</div>
+          </div>
+        </div>
+      </button>
+
+      <button class="education btn_more">
+        Education
+        <div class="hidden hidden_education">
+          <div>
+            Canva for education
+            <div>Education overview</div>
+            <div>Canva for students</div>
+            <div>Education plans</div>
+          </div>
+          <div>
+            K-12 education
+            <div>Canva for schools and districts</div>
+            <div>Product features</div>
+            <div>LMS integrations</div>
+            <div>K-12 case studies</div>
+            <div>Contact us</div>
+          </div>
+          <div>
+            K-12 teachers
+            <div>Canva for teachers</div>
+            <div>Eligibility guidelines</div>
+            <div>Teaching resources</div>
+            <div>Teacher communities</div>
+          </div>
+          <div>
+            Higher education
+            <div>Canva for higher education</div>
+            <div>Case studies</div>
+            <div>Contact Campus Sales</div>
+          </div>
+          <div>
+            Campus solutions
+            <div>Academic success</div>
+            <div>Accessibility</div>
+            <div>Brand management</div>
+            <div>Security and SSO</div>
+          </div>
+        </div>
+      </button>
+
+      <button class="help btn_more">
+        Help
+        <div class="hidden hidden_help">
+          <div>
+            Help
+            <div>Help Center</div>
+            <div>Design School</div>
+          </div>
+          <div>
+            Create guides
+            <div>Logos</div>
+            <div>Flyers</div>
+            <div>Banners</div>
+            <div>Posters</div>
+            <div>Resumes</div>
+            <div>Photo collages</div>
+            <div>YouTube thumbnails</div>
+            <div>All create guides</div>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div class="register">
+      <button class="sign_up btn_register">Sign up</button>
+      <button class="log_in btn_register">Login</button>
+    </div>
+  </div>
+  <div class="main_image">
+    <div class="images">
+      <div class="slogan">
+        <h1>Empowering the world to design</h1>
+      </div>
+      <div class="anh1">
+        <img class="image fill"
+          src="https://content-management-files.canva.com/bef55557-7453-4f55-a5a0-33babb9d53d9/image-1.png"
+          alt="A person using a laptop with another person watching" height="300" width="300" loading="eager"
+          class="vNkAEH9 E83deBw" style="object-fit: cover; object-position: center center" />
+      </div>
+      <div class="anh2">
+        <img class="image fill"
+          src="https://content-management-files.canva.com/c5bbe1e7-3a7c-4433-bed5-ffc8f7de472e/image-2.png"
+          alt="A person writing down notes on their tablet" height="260" width="300" loading="eager"
+          class="vNkAEH9 E83deBw" style="object-fit: cover; object-position: center center" />
+      </div>
+      <div class="anh3">
+        <img class="image fill"
+          src="https://content-management-files.canva.com/f7993c36-83fc-415f-99db-9b98c3dff4ed/image-3.png"
+          alt="A person holding a baby presenting a design made using Canva" height="224" width="300" loading="eager"
+          class="vNkAEH9 E83deBw" style="object-fit: cover; object-position: center center" />
+      </div>
+      <div class="anh4">
+        <img class="image fill"
+          src="https://content-management-files.canva.com/620f037e-46e5-430c-8575-f4c8e0662aeb/image-4.png"
+          alt="A person using Canva with their laptop" height="336" width="300" loading="eager" class="vNkAEH9 E83deBw"
+          style="object-fit: cover; object-position: center center" />
+      </div>
+      <div class="anh5">
+        <img class="image fill"
+          src="https://content-management-files.canva.com/d78b8527-96ff-44b2-8c97-16ebd7ef8e52/image-5.png"
+          alt="A person showing another person their iPad" height="300" width="300" loading="eager"
+          class="vNkAEH9 E83deBw" style="object-fit: cover; object-position: center center" />
+      </div>
+      <div class="anh6">
+        <img class="image fill"
+          src="https://content-management-files.canva.com/9d307b68-c01a-4ec8-b613-d6a1f0677552/image-6.png"
+          alt="A person presenting a design they created with their laptop using Canva" height="234" width="300"
+          loading="eager" class="vNkAEH9 E83deBw" style="object-fit: cover; object-position: center center" />
+      </div>
+    </div>
+  </div>
+  <div class="trustedby">
+    <p>TRUSTED BY</p>
+    <div class="logos_trustedby">
+      <div class="logotrust">
+        <img class="image fill" src="https://static-cse.canva.com/_next/static/media/zoom-20220313.file.063825cf.png"
+          alt="Zoom" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+          style="object-fit: contain; object-position: center center" />
+      </div>
+      <div class="logotrust">
+        <img class="image fill" src="https://static-cse.canva.com/_next/static/media/bloomingdales.file.b2ebbaed.png"
+          alt="Bloomingdale's" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+          style="object-fit: contain; object-position: center center" />
+      </div>
+      <div class="logotrust">
+        <img class="image fill" src="https://static-cse.canva.com/_next/static/media/danone.file.4a3aa354.png"
+          alt="Danone" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+          style="object-fit: contain; object-position: center center" />
+      </div>
+      <div class="logotrust">
+        <img class="image fill" src="https://static-cse.canva.com/_next/static/media/airbnb.file.902d573d.png"
+          alt="Airbnb" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+          style="object-fit: contain; object-position: center center" />
+      </div>
+      <div class="logotrust">
+        <img class="image fill" src="https://static-cse.canva.com/_next/static/media/salesforce.file.a3641534.svg"
+          alt="Salesforce" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+          style="object-fit: contain; object-position: center center" />
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <p>
+      Launched in 2013, Canva is an online design and publishing tool with a
+      mission to empower everyone in the world to design anything and publish
+      anywhere.
+    </p>
+    <div class="info_achiv">
+      <div>
+        <h3>200M+</h3>
+        <p>Monthly active users</p>
+      </div>
+      <div>
+        <h3>30B+</h3>
+        <p>Designs created</p>
+      </div>
+      <div>
+        <h3>190</h3>
+        <p>Countries</p>
+      </div>
+      <div>
+        <h3>100+</h3>
+        <p>Languages</p>
+      </div>
+    </div>
+  </div>
+  <div class="our_values">
+    <h2>Our values</h2>
+    <div class="The_slick">
+      <div class="img_slick">
+        <div class="box">
+          <img
+            src="https://content-management-files.canva.com/77a7e4fe-3a6e-4a25-a0ab-2fb3d01dd412/1-Beforceforgood.png"
+            alt="A heart shaped plant graphic" height="310" width="274" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <h3>Be a force for good</h3>
+        <p>
+          Making the world a better place through positive actions, inclusion
+          and diversity
+        </p>
+      </div>
+      <div class="img_slick">
+        <div class="box">
+          <img src="https://content-management-files.canva.com/5d651d0c-0115-4ba6-80d5-9315ac163f6d/2-Begoodhuman.png"
+            alt="Three people smiling graphic" height="310" width="274" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <h3>Be a good human</h3>
+        <p>
+          Valuing good communication. Being open, honest and constructive:
+          individually, within your team, across the company, and externally.
+        </p>
+      </div>
+      <div class="img_slick">
+        <div class="box">
+          <img src="https://content-management-files.canva.com/e61264bc-50ae-43ba-973f-51b75a690b5f/3-Empowerothers.png"
+            alt="Graphic of a tiny person on a hand" height="310" width="274" loading="lazy"
+            class="vNkAEH9 K4Eyfzx E83deBw" style="object-fit: contain; object-position: center center" />
+        </div>
+        <h3>Empower others</h3>
+        <p>
+          Empowering others to achieve their goals, both globally and within
+          Canva.
+        </p>
+      </div>
+      <div class="img_slick">
+        <div class="box">
+          <img
+            src="https://content-management-files.canva.com/95deaa1e-b0c0-471b-a748-e64868be988b/4-Complexthingssimple.png"
+            alt="A completed maze graphic" height="310" width="274" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <h3>Make complex things simple</h3>
+        <p>
+          Always aiming for the most simple, pragmatic and effective solution
+          to any problem. Think of the user.
+        </p>
+      </div>
+      <div class="img_slick">
+        <div class="box">
+          <img
+            src="https://content-management-files.canva.com/e4431cd8-4645-4a27-b397-0c85e26fccd8/5-Pursueexcellence.png"
+            alt="A trophy graphic" height="310" width="274" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <h3>Pursue excellence</h3>
+        <p>
+          Maintain a high bar for ourselves and the people we work with.
+          Continuous growth and development. Lead by example.
+        </p>
+      </div>
+      <div class="img_slick">
+        <div class="box">
+          <img src="https://content-management-files.canva.com/91987682-c041-4237-8bdd-e9fd7d42a0be/6-Crazybiggoals.png"
+            alt="A person in a space suit planting down a flag graphic" height="310" width="274" loading="lazy"
+            class="vNkAEH9 K4Eyfzx E83deBw" style="object-fit: contain; object-position: center center" />
+        </div>
+        <h3>Set crazy big goals and make them happen</h3>
+        <p>
+          Set ambitious goals, prioritise, hustle to execute and celebrate
+          success!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="our_commitments">
+    <h2>Our commitments</h2>
+    <div class="commit_big">
+      <img alt="A student holding chemistry text books, standing in front of a rustic home" height="480" width="1284"
+        loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+        src="https://content-management-files.canva.com/ac80d8c5-f7c7-4111-9bab-bbdb090559a7/About_StepTwo-Desktop.jpg"
+        style="object-fit: cover; object-position: center center" />
+      <div class="content">
+        <p>Canva Step Two</p>
+        <h3>Doing the most good we can with our Two-Step Plan.</h3>
+        <button>Learn more</button>
+      </div>
+    </div>
+    <div class="commit_small">
+      <div>
+        <img alt="A photo of a hill" height="1176" width="1284" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+          src="https://content-management-files.canva.com/61bb06dc-76a5-4f72-b20e-83d28dedbea7/Sustainability.png"
+          style="object-fit: cover; object-position: center center" />
+        <div class="content">
+          <p>Sustainability at Canva</p>
+          <h3>It’s our world, and our responsibility.</h3>
+          <button>Learn more</button>
+        </div>
+      </div>
+      <div>
+        <img alt="A photo of a laptop on a table" height="1176" width="1284" loading="lazy"
+          class="vNkAEH9 K4Eyfzx E83deBw"
+          src="https://content-management-files.canva.com/cc83142e-7869-4564-bfd7-e76d077c09a8/Trust.png"
+          style="object-fit: cover; object-position: center center" />
+        <div class="content">
+          <p>Trust Center</p>
+          <h3>Creating a safe and trusted place for creativity.</h3>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="awards_section">
+    <h2 class="awards_title">Awards and recognition</h2>
+    <div class="awards_grid">
+      <div class="award_item">
+        <div class="box">
+          <img
+            src="https://static-cse.canva.com/_next/static/assets/cybercx_w159xh68_34038c3528adce3c7c2ab1159df2a5f20604094efa5bdd6b253029fb668fa0b8.png"
+            alt="CyberCX Award" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <div class="award_text">
+          <p class="award_category">Large Enterprise</p>
+          <p class="award_detail">2024 Winner, Privacy by Design Awards</p>
+        </div>
+      </div>
+      <div class="award_item">
+        <div class="box">
+          <img
+            src="https://static-cse.canva.com/_next/static/assets/fastcompany_w1280xh182_d6f26ae474477cfe165aab4f57fd8e35e74d41ac676b9d44d4213d3ef9ef7bf1.png"
+            alt="Fast Company Award" loading="lazy" height="310" width="274" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <div class="award_text">
+          <p class="award_category">Design Company of the Year</p>
+          <p class="award_detail">2023 Winner, Innovation by Design Awards</p>
+        </div>
+      </div>
+      <div class="award_item">
+        <div class="box">
+          <img
+            src="https://static-cse.canva.com/_next/static/assets/time_w1280xh397_ffd6fddbba67b36df3931c798d597812f37c65223900fb2629711577ebdb5c49.png"
+            alt="Time Award" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <div class="award_text">
+          <p class="award_category">Apps: Magic Studio</p>
+          <p class="award_detail">2024 Winner, Best Innovations</p>
+        </div>
+      </div>
+      <div class="award_item">
+        <div class="box">
+          <img
+            src="https://static-cse.canva.com/_next/static/assets/fastcompany_w1280xh182_d6f26ae474477cfe165aab4f57fd8e35e74d41ac676b9d44d4213d3ef9ef7bf1.png"
+            alt="Fast Company Award" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <div>
+          <p class="award_category">AI: Magic Studio</p>
+          <p class="award_detail">2024 Winner, Innovation by Design Awards</p>
+        </div>
+      </div>
+      <div class="award_item">
+        <div class="box">
+          <img
+            src="https://static-cse.canva.com/_next/static/assets/global_ready_w115xh64_4d855d8344b1405680a8c81c4d08c6e55d5b859de255c1bbd00d82e60371012d.png"
+            alt="Global Ready Conference Award" loading="lazy" class="vNkAEH9 K4Eyfzx E83deBw"
+            style="object-fit: contain; object-position: center center" />
+        </div>
+        <div class="award_text">
+          <p class="award_category">Accessibility Award</p>
+          <p class="award_detail">2022 Winner, Smartling</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feedback">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="careers">
+    <div>
+      <p></p>
+      <h2></h2>
+      <span>
+        <a href=""></a>
+      </span>
+    </div>
+    <div></div>
+  </div>
+  <div class="newsroom">
+    <div>
+      <h2></h2>
+      <span>
+        <a href=""></a>
+      </span>
+    </div>
+    <div>
+      <div>
+        <img src="" alt="" />
+        <p></p>
+        <h3></h3>
+      </div>
+      <div>
+        <img src="" alt="" />
+        <p></p>
+        <h3></h3>
+      </div>
+      <div>
+        <img src="" alt="" />
+        <p></p>
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+  <div class="a_word_from_all_of_us">
+    <img src="" alt="" />
+    <div>
+      <span></span>
+      <span></span>
+    </div>
+    <img src="" alt="" />
+  </div>
+
+  <div></div>
+  <div class="about">
+    <div>
+      <div></div>
+      <div>
+        <span>
+          <a href=""></a>
+        </span>
+        <span>
+          <a href=""></a>
+        </span>
+      </div>
+    </div>
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <div class="end">
+    <div>
+      <button>
+        <i></i>
+        <div></div>
+      </button>
+      <div>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+    </div>
+    <div>
+      <span></span>
+      <span></span>
+      <p></p>
+    </div>
+  </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //   $('.your-class').slick({
+      //     setting-name: setting-value
+      //   });
+      $(".The_slick").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    });
+  </script>
+  <script>
+    const navbar = document.querySelector(".container1_nappa");
+    let lastScroll = 0;
+    window.addEventListener("scroll", function () {
+      let currentScroll = window.scrollY;
+      navbar.style.transition = "0.3s";
+      // Cuộn xuống
+      if (currentScroll > lastScroll) {
+        navbar.style.transform = "translateY(-100%)";
+      }
+      // Cuộn lên
+      else {
+        navbar.style.transform = "translateY(0)";
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+
+</html>

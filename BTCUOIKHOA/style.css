@@ -253,6 +253,9 @@
 
 
 
+
+
+
 .our_values {
   h2 {
     text-align: center;
@@ -260,7 +263,7 @@
   }
 }
 .our_values {
-  padding: 0 48px;
+  padding: 10% 7%;
   box-sizing: border-box;
 }
 .The_slick {
@@ -305,9 +308,10 @@
 
 
 
+
+
 .our_commitments {
-  width: 90%;
-  padding: 10% 5%;
+  padding: 0 7%;
 }
 .our_commitments h2 {
   text-align: center;
@@ -318,7 +322,7 @@
 .commit_big {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 500px;
   border-radius: 24px;
   margin-bottom: 20px;
 }
@@ -371,12 +375,13 @@
   font-size: 16px;
   background: white;
 }
-button:hover{
+button:hover {
   background: whitesmoke;
 }
 .commit_small {
   display: flex;
   gap: 20px;
+  height: 520px;
 }
 .commit_small > div {
   position: relative;
@@ -399,15 +404,20 @@ button:hover{
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-self: start;
   align-items: center;
   text-align: center;
   color: white;
   z-index: 2;
 }
 .commit_small h3 {
+  margin-top: 0;
+  margin-bottom: 50px;
   width: 100%;
   font-size: 36px;
 }
+
+
 
 
 
@@ -420,7 +430,7 @@ button:hover{
   padding: 60px 20px;
   text-align: center;
 }
-.awards_section .box{
+.awards_section .box {
   width: 100%;
   height: 100%;
 }
@@ -434,7 +444,7 @@ button:hover{
   display: flex;
   justify-content: center;
   width: 100%;
-  gap: 32px; 
+  gap: 32px;
 }
 .award_item {
   width: 20%;
@@ -461,3 +471,131 @@ button:hover{
   margin: 0;
   line-height: 1.4;
 }
+
+
+
+.feedback {
+  height: 450px;
+  padding: 10% 7%;
+  position: relative;
+}
+.tab1,
+.tab2,
+.tab3,
+.tab4 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  gap: 100px;
+  align-items: center;
+}
+.tab1 {
+  display: flex;
+}
+.feedback .image {
+  width: 720px;
+  height: 450px;
+  border-radius: 18px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+.feedback .content {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon img {
+  width: 25px;
+  opacity: 0.4;
+  margin-bottom: 10%;
+}
+.para {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 10%;
+}
+.p1 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 8px;
+  padding-top: 5%;
+}
+.p2 {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+.tabcontrol {
+  position: absolute;
+  right: 27%;
+  bottom: 20%;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+}
+.tabcontrol button {
+  width: 40px;
+  height: 5px;
+  border-radius: 10px;
+  border: none;
+  background: #ddd;
+}
+.tabcontrol button.selected {
+  background: #8b3dff;
+}
+
+
+
+
+.careers{
+      display: flex;
+      justify-content: space-between;
+      height: 500px;
+      background-color: #3b1680;
+      margin: 0% 7%;
+      border-radius: 18px;
+      gap: 5px;
+    }
+    .careers .image{
+      height: 500px;
+      width: 900px;
+    }
+    .image img{
+      height: 100%;
+      width: 100%;
+      transition: 0.3s ease;
+    }
+    .careers .content{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10% 5%;
+    }
+    .careers p{
+      color: rgb(198, 197, 197);
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    .careers h2{
+      color: rgb(223, 220, 220);
+      font-weight: 750;
+      font-size: 2rem;
+      width: 80%;
+    }
+    .careers a{
+      padding:  10px 12px;
+      background-color: white;
+      color: black;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }

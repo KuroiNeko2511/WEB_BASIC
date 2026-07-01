@@ -112,11 +112,11 @@
 .register {
     padding-right: 3%;
   .btn_register {
-    width: 82px;
-    height: 40px;
+    width: 70px;
+    height: 32px;
     border-radius: 8px;
     font-weight: 500;
-    border: 0.05px solid gray;
+    border: 0.05px solid rgb(202, 200, 200);
   }
   .log_in {
     color: white;
@@ -657,7 +657,7 @@ button:hover {
         margin: 5% 7%;
         gap: 10px;
         border-radius: 18px;
-        background-color: rgb(211, 229, 255);
+        background-color: rgb(232, 241, 255);
       }
       .a_word_from_all_of_us .image{
         width: 300px;
@@ -686,3 +686,94 @@ button:hover {
       .logoafter{
         padding: 0 3%;
       }
+
+
+
+
+
+      
+      .about{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+      }
+      .box1 {
+        display: block;
+        padding: 1% 3%;
+        width: 20%;
+        height: 180px;
+        border-top: 2px;
+      }
+      .about .box1 > div:first-child {
+        font-size: 18px;
+        color: rgb(71, 70, 70);
+      }
+      .about .icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: start;
+        gap: 5%;
+      }
+      .about a {
+        padding: 10px 12px;
+        background-color: white;
+        color: black;
+        margin-bottom: 50px;
+        border-radius: 8px;
+        text-decoration: none;
+        border: 0.02px solid rgb(202, 200, 200);
+        font-weight: 600;
+      transition: 0.3s ease;
+      }
+      a:hover{
+        background-color: rgb(229, 229, 229);
+      }
+       /* Container chính xếp 3 cột nằm ngang cách đều nhau */
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* Khoảng cách giữa các cột lớn */
+  width: 100%;
+}
+
+/* Định dạng cho từng cột dọc */
+.menu_column {
+  flex: 1; /* Chia đều 3 cột có độ rộng bằng nhau */
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* Khoảng cách giữa các khối menu con trong cùng 1 cột */
+}
+
+/* Định dạng cho tiêu đề và danh sách bên trong */
+.menu_group .group_title {
+  font-weight: 400;
+  color: rgb(112, 112, 112);
+  padding: 4% 5%;
+}
+
+.menu_group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_group ul li {
+  padding: 3% 5%;
+  color: #36516b;
+  font-weight: 500;
+  
+      transition: 0.3s ease;
+      border-radius: 10px;
+}
+.menu_group ul li i {
+  display: inline-block !important;
+  transition: 0.3s ease !important;
+}
+       .menu_group ul li:hover{
+        background-color: rgb(237, 235, 235);
+
+      }
+      .menu_group ul li:hover i {
+  transform: scale(1.1) translateY(-30%); 
+}
+    

@@ -4,79 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/9d86ff7bf6.js" crossorigin="anonymous"></script>
     <style>
-      .end{
-        margin-top: 5%;
-        padding: 0 3%;
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+           
+      @media (max-width: 1200px) {
+        .container1_nappa,
+        .logoafter{
+          padding: 0 3%;
+        }
+        .slogan h1{
+          font-size: 3rem;
+        }
+      .about .box1 {
+        padding-left: 3%;
+        padding-right: 0;
       }
-      .end .first{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        gap: 20px;
-        font-size: 16px;
-        font-weight: 500;
       }
-      .end .global{
-        display: flex;
-        gap: 10px;
-        width: 130px;
-        height: 26px;
-        padding: 5px 5px;
-        border-radius: 10px;
-        transition: 0.3s ease;
+      @media (max-width: 1199px){
+        .about{
+          display: block;
+        }
+        .box2{
+          padding: 0 3%;
+        }
+        .end{
+          display: block;
+        }
       }
-      .end .global:hover{
-        background-color: rgb(237, 235, 235);
+      @media (max-width: 900px){
+        .awards_section .awards_grid{
+          flex-direction: column;  
+  align-items: center;
+        }
+        .careers{
+          flex-direction: column-reverse;
+          height: 900px;
+          margin: 0;
+          border-radius: 0;
+        }
+        .careers .content{
+          padding: 48px 24px;
+        }
+        .careers .image{
+          width: 95%;
+          height: 94%;
+          align-self: center;
+          padding-top: 20px;
+        }
+      .newsroom .newsrom_grid{
+        
       }
-      
-      .end .icon{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        height: 20px;
-        gap: 5px;
+      .newsroom .box{
+      width: 47%;
       }
-      .end .icon i{
-        object-fit: cover;
-        font-size: 20px;
-        text-align: center;
-        align-items: center;
-        padding: 5px 5px;
-        border-radius: 10px;
-        transition: 0.3s ease;
-      }
-      .end i:hover{
-        background-color: rgb(237, 235, 235);
-      }
-      .end .second{
-        display: flex;
-        height: 35px;
-        gap: 20px;
-        font-weight: 350;
-        font-size: 18px;
-      }
-      .end p{
-        margin: 0 0;
-      }
-      .end span{
-        text-align: start;
-        padding: 5px 10px;
-        border-radius: 10px;
-        transition: 0.3s ease;
-      }
-      .end span:hover{
-        background-color: rgb(237, 235, 235);
-      }
-    
+
+    }
     </style>
   </head>
 
@@ -264,8 +251,6 @@
               <div>Canva for higher education</div>
               <div>Case studies</div>
               <div>Contact Campus Sales</div>
-            </div>
-            <div>
               Campus solutions
               <div>Academic success</div>
               <div>Accessibility</div>
@@ -383,9 +368,9 @@
     <div class="trustedby">
       <p>TRUSTED BY</p>
       <div class="logos_trustedby">
-        <div class="logotrust">
+        <div class="image">
           <img
-            class="image fill"
+            class="image"
             src="https://static-cse.canva.com/_next/static/media/zoom-20220313.file.063825cf.png"
             alt="Zoom"
             loading="lazy"
@@ -393,9 +378,8 @@
             style="object-fit: contain; object-position: center center"
           />
         </div>
-        <div class="logotrust">
+        <div class="image">
           <img
-            class="image fill"
             src="https://static-cse.canva.com/_next/static/media/bloomingdales.file.b2ebbaed.png"
             alt="Bloomingdale's"
             loading="lazy"
@@ -403,9 +387,8 @@
             style="object-fit: contain; object-position: center center"
           />
         </div>
-        <div class="logotrust">
+        <div class="image">
           <img
-            class="image fill"
             src="https://static-cse.canva.com/_next/static/media/danone.file.4a3aa354.png"
             alt="Danone"
             loading="lazy"
@@ -413,9 +396,8 @@
             style="object-fit: contain; object-position: center center"
           />
         </div>
-        <div class="logotrust">
+        <div class="image">
           <img
-            class="image fill"
             src="https://static-cse.canva.com/_next/static/media/airbnb.file.902d573d.png"
             alt="Airbnb"
             loading="lazy"
@@ -423,9 +405,8 @@
             style="object-fit: contain; object-position: center center"
           />
         </div>
-        <div class="logotrust">
+        <div class="image">
           <img
-            class="image fill"
             src="https://static-cse.canva.com/_next/static/media/salesforce.file.a3641534.svg"
             alt="Salesforce"
             loading="lazy"
@@ -463,8 +444,8 @@
     <div class="our_values">
       <h2>Our values</h2>
       <div class="The_slick">
-        <div class="img_slick">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://content-management-files.canva.com/77a7e4fe-3a6e-4a25-a0ab-2fb3d01dd412/1-Beforceforgood.png"
               alt="A heart shaped plant graphic"
@@ -481,8 +462,8 @@
             and diversity
           </p>
         </div>
-        <div class="img_slick">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://content-management-files.canva.com/5d651d0c-0115-4ba6-80d5-9315ac163f6d/2-Begoodhuman.png"
               alt="Three people smiling graphic"
@@ -499,8 +480,8 @@
             individually, within your team, across the company, and externally.
           </p>
         </div>
-        <div class="img_slick">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://content-management-files.canva.com/e61264bc-50ae-43ba-973f-51b75a690b5f/3-Empowerothers.png"
               alt="Graphic of a tiny person on a hand"
@@ -517,8 +498,8 @@
             Canva.
           </p>
         </div>
-        <div class="img_slick">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://content-management-files.canva.com/95deaa1e-b0c0-471b-a748-e64868be988b/4-Complexthingssimple.png"
               alt="A completed maze graphic"
@@ -535,8 +516,8 @@
             to any problem. Think of the user.
           </p>
         </div>
-        <div class="img_slick">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://content-management-files.canva.com/e4431cd8-4645-4a27-b397-0c85e26fccd8/5-Pursueexcellence.png"
               alt="A trophy graphic"
@@ -553,8 +534,8 @@
             Continuous growth and development. Lead by example.
           </p>
         </div>
-        <div class="img_slick">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://content-management-files.canva.com/91987682-c041-4237-8bdd-e9fd7d42a0be/6-Crazybiggoals.png"
               alt="A person in a space suit planting down a flag graphic"
@@ -627,10 +608,10 @@
       </div>
     </div>
     <div class="awards_section">
-      <h2 class="awards_title">Awards and recognition</h2>
+      <h2>Awards and recognition</h2>
       <div class="awards_grid">
-        <div class="award_item">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://static-cse.canva.com/_next/static/assets/cybercx_w159xh68_34038c3528adce3c7c2ab1159df2a5f20604094efa5bdd6b253029fb668fa0b8.png"
               alt="CyberCX Award"
@@ -639,13 +620,13 @@
               style="object-fit: contain; object-position: center center"
             />
           </div>
-          <div class="award_text">
-            <p class="award_category">Large Enterprise</p>
-            <p class="award_detail">2024 Winner, Privacy by Design Awards</p>
+          <div class="content">
+            <p class="p1">Large Enterprise</p>
+            <p class="p2">2024 Winner, Privacy by Design Awards</p>
           </div>
         </div>
-        <div class="award_item">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://static-cse.canva.com/_next/static/assets/fastcompany_w1280xh182_d6f26ae474477cfe165aab4f57fd8e35e74d41ac676b9d44d4213d3ef9ef7bf1.png"
               alt="Fast Company Award"
@@ -656,13 +637,13 @@
               style="object-fit: contain; object-position: center center"
             />
           </div>
-          <div class="award_text">
-            <p class="award_category">Design Company of the Year</p>
-            <p class="award_detail">2023 Winner, Innovation by Design Awards</p>
+          <div class="content">
+            <p class="p1">Design Company of the Year</p>
+            <p class="p2">2023 Winner, Innovation by Design Awards</p>
           </div>
         </div>
-        <div class="award_item">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://static-cse.canva.com/_next/static/assets/time_w1280xh397_ffd6fddbba67b36df3931c798d597812f37c65223900fb2629711577ebdb5c49.png"
               alt="Time Award"
@@ -671,13 +652,13 @@
               style="object-fit: contain; object-position: center center"
             />
           </div>
-          <div class="award_text">
-            <p class="award_category">Apps: Magic Studio</p>
-            <p class="award_detail">2024 Winner, Best Innovations</p>
+          <div class="content">
+            <p class="p1">Apps: Magic Studio</p>
+            <p class="p2">2024 Winner, Best Innovations</p>
           </div>
         </div>
-        <div class="award_item">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://static-cse.canva.com/_next/static/assets/fastcompany_w1280xh182_d6f26ae474477cfe165aab4f57fd8e35e74d41ac676b9d44d4213d3ef9ef7bf1.png"
               alt="Fast Company Award"
@@ -686,13 +667,13 @@
               style="object-fit: contain; object-position: center center"
             />
           </div>
-          <div>
-            <p class="award_category">AI: Magic Studio</p>
-            <p class="award_detail">2024 Winner, Innovation by Design Awards</p>
+          <div class="content">
+            <p class="p1">AI: Magic Studio</p>
+            <p class="p2">2024 Winner, Innovation by Design Awards</p>
           </div>
         </div>
-        <div class="award_item">
-          <div class="box">
+        <div class="box">
+          <div class="image">
             <img
               src="https://static-cse.canva.com/_next/static/assets/global_ready_w115xh64_4d855d8344b1405680a8c81c4d08c6e55d5b859de255c1bbd00d82e60371012d.png"
               alt="Global Ready Conference Award"
@@ -701,9 +682,9 @@
               style="object-fit: contain; object-position: center center"
             />
           </div>
-          <div class="award_text">
-            <p class="award_category">Accessibility Award</p>
-            <p class="award_detail">2022 Winner, Smartling</p>
+          <div class="content">
+            <p class="p1">Accessibility Award</p>
+            <p class="p2">2022 Winner, Smartling</p>
           </div>
         </div>
       </div>
@@ -872,8 +853,8 @@
           <a href="#">Go to Newsroom</a>
         </span>
       </div>
-      <div class="content">
-        <div>
+      <div class="newsroom_grid">
+        <div class="box">
           <div class="image">
             <img
               src="https://content-management-files.canva.com/59d7223f-51b8-4dd9-b1f3-83260e7c67b9/CARC25001_Newsroom_Wave2_1920x1080.png"
@@ -888,7 +869,7 @@
           <p>Our company</p>
           <h3>Canva Create returns for 2025: Our biggest event yet</h3>
         </div>
-        <div>
+        <div class="box">
           <div class="image">
             <img
               src="https://content-management-files.canva.com/91a5f9d2-e4c5-4ef6-a833-5f7e79ab811a/Attention_economy_webinar_thumbnail.png"
@@ -905,7 +886,7 @@
             Winning in the Attention Economy: How to break through the noise
           </h3>
         </div>
-        <div>
+        <div class="box">
           <div class="image">
             <img
               src="https://content-management-files.canva.com/03fe22ef-105a-4d1a-9b33-5bc9ee6406e7/587133a9-394e-44d5-9cdd-b7f810069df4.jpg"
@@ -963,7 +944,7 @@
         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDgwIDMwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9Il8yMDAyMDQ2NTA4X19hIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjIxIC0uNjczNTMgLjI1NDUgLjA3OTM1IC41MTIgMS4xMDkpIj48c3RvcCBzdG9wLWNvbG9yPSIjNjQyMEZGIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjQyMEZGIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iXzIwMDIwNDY1MDhfX2IiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguNTg0IC4xNjIxNSAtLjM3NzEgMS4zNTgyIC4wMjQgLjY2NikiPjxzdG9wIG9mZnNldD0iLjI1IiBzdG9wLWNvbG9yPSIjMDBDNENDIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDBDNENDIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iXzIwMDIwNDY1MDhfX2MiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguMjk0MjUgLS43MzkgLjM1NTUgLjE0MTU1IC40MjcgMSkiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fZCIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC4zOTE1IC0uNTk4NjkgLjQ3NDMgLjMxMDE2IC4wMjggMSkiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fZSIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDM0LjU5MyAtLjEgLjIpIHNjYWxlKDEuMDMyNTUgMi44MDY4OCkiPjxzdG9wIHN0b3AtY29sb3I9IiMwMEM0Q0MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMEM0Q0MiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdHRlcm4gaWQ9Il8yMDAyMDQ2NTA4X19mIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+PHBhdGggZmlsbD0iIzdEMkFFNyIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19hKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19iKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19jKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19kKSIgZD0iTTAgMGgxdjFIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19lKSIgZD0iTTAgMGgxdjFIMHoiLz48L3BhdHRlcm4+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjXzIwMDIwNDY1MDhfX2YpIiBkPSJNNzkuNDQ0IDE4LjA5NmMtLjEzNiAwLS4yNi4wODgtLjMyNC4yNzItLjgyIDIuMzQtMS45MjggMy43MzItMi44NCAzLjczMi0uNTI0IDAtLjczNi0uNTg0LS43MzYtMS41IDAtMi4yOTIgMS4zNzItNy4xNTIgMi4wNjQtOS4zNjguMDgtLjI2OC4xMzItLjUwOC4xMzItLjcxMiAwLS42NDQtLjM1Mi0uOTYtMS4yMjQtLjk2LS45NCAwLTEuOTUyLjM2OC0yLjkzNiAyLjA5Mi0uMzQtMS41Mi0xLjM2OC0yLjE4NC0yLjgwNC0yLjE4NC0xLjY2IDAtMy4yNjQgMS4wNjgtNC41ODQgMi44LTEuMzIgMS43MzItMi44NzIgMi4zLTQuMDQgMi4wMi44NC0yLjA1NiAxLjE1Mi0zLjU5MiAxLjE1Mi00LjczMiAwLTEuNzg4LS44ODQtMi44NjgtMi4zMTItMi44NjgtMi4xNzIgMC0zLjQyNCAyLjA3Mi0zLjQyNCA0LjI1MiAwIDEuNjg0Ljc2NCAzLjQxNiAyLjQ0NCA0LjI1Ni0xLjQwOCAzLjE4NC0zLjQ2NCA2LjA2NC00LjI0NCA2LjA2NC0xLjAwOCAwLTEuMzA0LTQuOTMyLTEuMjQ4LTguNDYuMDM2LTIuMDI0LjIwNC0yLjEyOC4yMDQtMi43NCAwLS4zNTItLjIyOC0uNTkyLTEuMTQ0LS41OTItMi4xMzYgMC0yLjc5NiAxLjgwOC0yLjg5NiAzLjg4NGExMC4yMzMgMTAuMjMzIDAgMCAxLS4zNjggMi4zMzJjLS44OTIgMy4xODQtMi43MzIgNS42LTMuOTMyIDUuNi0uNTU2IDAtLjcwOC0uNTU2LS43MDgtMS4yODQgMC0yLjI5MiAxLjI4NC01LjE1NiAxLjI4NC03LjYgMC0xLjc5Ni0uNzg4LTIuOTMyLTIuMjcyLTIuOTMyLTEuNzQ4IDAtNC4wNiAyLjA4LTYuMjQ4IDUuOTc2LjcyLTIuOTg0IDEuMDE2LTUuODcyLTEuMTE2LTUuODcyQTIuODg2IDIuODg2IDAgMCAwIDM2IDkuOTE2YS43NTIuNzUyIDAgMCAwLS40MzIuNzI4Yy4yMDQgMy4xNzYtMi41NiAxMS4zMTItNS4xOCAxMS4zMTItLjQ3NiAwLS43MDgtLjUxNi0uNzA4LTEuMzQ4IDAtMi4yOTYgMS4zNjgtNy4xNDQgMi4wNTYtOS4zNjQuMDg4LS4yODguMTM2LS41MzYuMTM2LS43NTIgMC0uNjA4LS4zNzYtLjkyLTEuMjI4LS45Mi0uOTM2IDAtMS45NTIuMzU2LTIuOTMyIDIuMDgtLjM0NC0xLjUyLTEuMzcyLTIuMTg0LTIuODA4LTIuMTg0LTIuMzU2IDAtNC45ODggMi40OTItNi4xNDQgNS43NC0xLjU0OCA0LjMzNi00LjY2OCA4LjUyNC04Ljg2OCA4LjUyNC0zLjgxMiAwLTUuODI0LTMuMTcyLTUuODI0LTguMTg0QzQuMDY4IDguMzEyIDkuMzggMi40IDEzLjMyIDIuNGMxLjg4NCAwIDIuNzg0IDEuMiAyLjc4NCAzLjA0IDAgMi4yMjgtMS4yNDQgMy4yNjQtMS4yNDQgNC4xMTIgMCAuMjYuMjE2LjUxNi42NDQuNTE2IDEuNzEyIDAgMy43MjgtMi4wMTIgMy43MjgtNC43NTZTMTcuMDA0LjU2IDEzLjA2NC41NkM2LjU1Mi41NiAwIDcuMTEyIDAgMTUuNTA4YzAgNi42OCAzLjI5NiAxMC43MDggOC45OTYgMTAuNzA4IDMuODg4IDAgNy4yODQtMy4wMjQgOS4xMTYtNi41NTIuMjA4IDIuOTI0IDEuNTM2IDQuNDUyIDMuNTYgNC40NTIgMS44IDAgMy4yNTYtMS4wNzIgNC4zNjgtMi45NTYuNDI4IDEuOTcyIDEuNTY0IDIuOTM2IDMuMDQgMi45MzYgMS42OTIgMCAzLjEwOC0xLjA3MiA0LjQ1Ni0zLjA2NC0uMDIgMS41NjQuMzM2IDMuMDM2IDEuNjkyIDMuMDM2LjY0IDAgMS40MDQtLjE0OCAxLjU0LS43MDggMS40MjgtNS45MDQgNC45NTYtMTAuNzI0IDYuMDM2LTEwLjcyNC4zMiAwIC40MDguMzA4LjQwOC42NzIgMCAxLjYwNC0xLjEzMiA0Ljg5Mi0xLjEzMiA2Ljk5MiAwIDIuMjY4Ljk2NCAzLjc2OCAyLjk1NiAzLjc2OCAyLjIwOCAwIDQuNDUyLTIuNzA0IDUuOTQ4LTYuNjU2LjQ2OCAzLjY5MiAxLjQ4IDYuNjcyIDMuMDY0IDYuNjcyIDEuOTQ0IDAgNS4zOTYtNC4wOTIgNy40ODgtOC40MjQuODIuMTA0IDIuMDUyLjA3NiAzLjIzNi0uNzYtLjUwNCAxLjI3Ni0uOCAyLjY3Mi0uOCA0LjA2OCAwIDQuMDIgMS45MiA1LjE0OCAzLjU3MiA1LjE0OCAxLjc5NiAwIDMuMjUyLTEuMDcyIDQuMzY4LTIuOTU2LjM2OCAxLjcgMS4zMDggMi45MzIgMy4wMzYgMi45MzIgMi43MDQgMCA1LjA1Mi0yLjc2NCA1LjA1Mi01LjAzMiAwLS42LS4yNTYtLjk2NC0uNTU2LS45NjR6TTIzLjMyIDIxLjg4OGMtMS4wOTIgMC0xLjUyLTEuMS0xLjUyLTIuNzQgMC0yLjg0OCAxLjk0OC03LjYwNCA0LjAwOC03LjYwNC45IDAgMS4yNCAxLjA2IDEuMjQgMi4zNTYgMCAyLjg5Mi0xLjg1MiA3Ljk4OC0zLjcyOCA3Ljk4OHptMzcuNDA0LTguNWMtLjY1Mi0uNzc2LS44ODgtMS44MzItLjg4OC0yLjc3MiAwLTEuMTYuNDI0LTIuMTQuOTMyLTIuMTRzLjY2NC41LjY2NCAxLjE5NmMwIDEuMTY0LS40MTYgMi44NjQtLjcwOCAzLjcxNnptOC40NjggOC41Yy0xLjA5MiAwLTEuNTItMS4yNjQtMS41Mi0yLjc0IDAtMi43NDggMS45NDgtNy42MDQgNC4wMjQtNy42MDQuOSAwIDEuMjIgMS4wNTIgMS4yMiAyLjM1NiAwIDIuODkyLTEuODIgNy45ODgtMy43MjQgNy45ODh6Ii8+PC9zdmc+"
       />
     </div>
-    <div class="about">
+    <div class="about wow animate__animated animate__slideInUp">
       <div class="box1">
         <div>Download Canva for free</div>
         <div class="icon">
@@ -1135,19 +1116,19 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $(".The_slick").slick({
-          dots: true,
+          dots: false,
+          arrows: true,
           infinite: false,
           speed: 300,
+          variableWidth: true,
           slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToScroll: 2,
           responsive: [
             {
               breakpoint: 1024,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                infinite: true,
-                dots: true,
               },
             },
             {
@@ -1197,5 +1178,9 @@
       }
       showTab(1);
     </script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   </body>
 </html>

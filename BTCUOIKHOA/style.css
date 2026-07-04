@@ -62,28 +62,33 @@
   top: 28px;
   left: 0;
   color: black;
+  border: 3px solid rgb(246, 241, 241);
   border-radius: 10px;
   padding: 3px 3px;
-  background-color: rgb(246, 241, 241);
-  gap: 2px;
+  background-color: white;
+  gap: 1px;
+  column-rule: 1px solid rgb(246, 241, 241);
 }
-.hidden div {
+.hidden .type {
   font-weight: 500;
   color: gray;
   background-color: white;
   text-align: start;
-  border-radius: 10px;
   padding: 10px;
 }
-.hidden div div {
+.hidden div div{
   font-weight: 500;
   width: 160px;
-  border-radius: 10px;
+  padding: 10px;
+  text-align: start;
   color: black;
   background-color: white;
 }
 .hidden div div:hover {
   background-color: rgb(217, 214, 214);
+}
+.hidden div .type:hover {
+  background-color: white;
 }
 .hidden_design {
   position: absolute;
@@ -418,10 +423,10 @@
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  background: white;
+  background: whitesmoke;
 }
 button:hover {
-  background: whitesmoke;
+  background: white;
 }
 .commit_small {
   display: flex;
@@ -614,33 +619,36 @@ button:hover {
 .careers{
       display: flex;
       justify-content: space-between;
-      height: 500px;
       background-color: #3b1680;
+      align-items: stretch;
       margin: 0% 7%;
       border-radius: 18px;
       gap: 5px;
     }
     .careers .image{
-      height: 500px;
-      width: 900px;
+      flex: 1 1 50%;
+  min-width: 0;       
+  border-radius: 18px;
     }
     .careers .image img{
       height: 100%;
       width: 100%;
+      object-fit: contain;
       border-radius: 18px;
     }
-    .careers .content{
-      box-sizing: border-box;
+    .careers .content{  
       display: flex;
+      flex: 1 1 50%;
       flex-direction: column;
       justify-content: center;
-      padding: 10% 5%;
+      padding: 8% 5%;
     }
     .careers p{
       color: rgb(198, 197, 197);
       font-weight: 700;
       font-size: 1rem;
       text-transform: uppercase;
+      margin: 0;
     }
     .careers h2{
       color: rgb(223, 220, 220);
@@ -650,12 +658,15 @@ button:hover {
     }
     .careers a{
       padding:  10px 12px;
-      background-color: white;
+      background-color: whitesmoke;
       color: black;
       text-align: center;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
+    }
+    .careers a:hover{
+      background-color: white;
     }
 
 
@@ -690,7 +701,7 @@ button:hover {
       flex-wrap: wrap; 
       justify-content: space-between;
     }
-    .newsroom .content div:hover img {
+    .newsroom .box:hover img {
       transform: scale(1.05);
     }
     .newsroom .box{
@@ -700,12 +711,14 @@ button:hover {
       width: auto;
       height: auto;
       overflow: hidden;
-    }
-    .newsroom .image img{
-      width: 100%;
-      height: 100%;
       border-radius: 10px;
     }
+    .newsroom .image img{
+      /* width: 100%;
+      height: 100%; */
+      border-radius: 10px;
+        transition: 0.2s ease;
+    } 
     .newsroom p {
       text-align: start;
       font-weight: 500;
@@ -795,7 +808,7 @@ button:hover {
         font-weight: 600;
       transition: 0.3s ease;
       }
-      a:hover{
+      .newsroom a:hover{
         background-color: rgb(229, 229, 229);
       }
        /* Container chính xếp 3 cột nằm ngang cách đều nhau */

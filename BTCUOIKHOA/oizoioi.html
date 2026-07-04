@@ -4,71 +4,444 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/animate.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/9d86ff7bf6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9d86ff7bf6.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-           
       @media (max-width: 1200px) {
         .container1_nappa,
         .logoafter{
           padding: 0 3%;
         }
-        .slogan h1{
+        .a_word_from_all_of_us{
+          margin: 64px 32px;
+        }
+        .slogan h1 {
           font-size: 3rem;
         }
-      .about .box1 {
-        padding-left: 3%;
-        padding-right: 0;
+        .about .box1 {
+          padding-left: 3%;
+          padding-right: 0;
+        }
       }
-      }
-      @media (max-width: 1199px){
-        .about{
+      @media (max-width: 1199px) {
+        .about {
           display: block;
         }
-        .box2{
+        .box2 {
           padding: 0 3%;
         }
-        .end{
+        .end {
           display: block;
         }
       }
-      @media (max-width: 900px){
-        .awards_section .awards_grid{
-          flex-direction: column;  
-  align-items: center;
+      @media (max-width: 900px) {
+        .container1_nappa {
+    justify-content: flex-start;  /* bỏ space-between, các item bám sát nhau bên trái */
+    gap: 12px;                     /* khoảng cách giữa hamburger và logo */
+  }
+        .more {
+    display: none;
+  }
+  .register {
+    margin-left: auto;   /* đẩy .register (Log in) về sát mép phải */
+  }
+  .register .sign_up {
+    display: none;
+  }
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger-btn:hover {
+    background-color: rgb(237, 235, 235);
+    border-radius: 8px;
+  }
+
+  .register .log_in:hover {
+    background-color: rgb(237, 235, 235);
+    color: #111;
+  }
+
+  .mobile-menu-row:hover {
+    background-color: rgb(237, 235, 235);
+  }
+  .mobile-menu-detail-content div div:hover{
+    background-color: rgb(237, 235, 235);
+  }
+  .mobile-menu-detail-content div .type:hover{
+    background-color: white;
+  }
+  .mobile-menu-close:hover,
+  .mobile-menu-back:hover {
+    background-color: rgb(237, 235, 235);
+    border-radius: 8px;
+  }
+
+  .mobile-menu-login:hover{
+    background-color: #7528e1;
+  }
+  .mobile-menu-signup:hover {
+    background-color: rgb(237, 235, 235);
+  }
+  .our_commitments {
+          padding: 64px 32px;
         }
-        .careers{
+        .commit_big {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+        }
+        .commit_big img {
+          height: 600px !important; /* tăng từ 300px lên, giảm mức độ crop */
+          object-fit: cover !important;
+          object-position: right top !important;
+        }
+        .commit_big .content {
+          position: static; /* bỏ overlay, đưa xuống dưới ảnh */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: auto;
+          padding: 24px 20px;
+          color: #111;
+          box-sizing: border-box; /* đổi màu chữ vì không còn nằm trên ảnh tối nữa */
+        }
+        .commit_big h3 {
+          font-size: 21px;
+        }
+
+        .commit_small {
+          flex-direction: row; /* vẫn giữ 2 cột song song */
+          height: auto;
+          align-items: flex-start;
+        }
+
+        .commit_small > div {
+          width: 50%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .commit_small img {
+          position: relative; /* bỏ vai trò "nền phủ", ảnh giờ là 1 khối bình thường */
+          height: 400px; /* tuỳ chỉnh độ cao ảnh, ảnh mẫu khá cao */
+          order: 2; /* đưa ảnh xuống dưới */
+        }
+
+        .commit_small .content {
+          position: static; /* bỏ absolute, không đè lên ảnh nữa */
+          width: 100%;
+          height: auto;
+          color: #111; /* đổi từ trắng sang màu tối vì không còn trên nền ảnh tối */
+          padding: 20px 16px;
+          order: 1; /* đưa content lên trên */
+          align-items: center; /* giữ căn giữa chữ như thiết kế gốc */
+        }
+
+        .commit_small h3 {
+          font-size: 21px;
+          margin-bottom: 20px;
+        }
+
+        .commit_small p {
+          color: #666; /* label "SUSTAINABILITY AT CANVA" đổi màu tối */
+        }
+        .awards_section .awards_grid {
+          flex-direction: column;
+          align-items: center;
+        }
+        .careers {
           flex-direction: column-reverse;
-          height: 0px;
           margin: 0;
           border-radius: 0;
         }
-        .careers .content{
+        .careers .content {
           padding: 40px 24px;
         }
-        .careers .image{
+        .careers .image {
           width: 95%;
           height: 94%;
           align-self: center;
           padding-top: 20px;
         }
-      .newsroom .newsrom_grid{
-        
-      }
-      .newsroom .box{
-      width: 47%;
-      }
+        .newsroom .newsrom_grid {
+        }
+        .newsroom .box {
+          width: 47%;
+        }
+        .our_values {
+          padding-right: 0;
+        }
+        .our_values .The_slick {
+          padding: 0;
+        }
+        .our_values .box {
+          width: 1800px;
+          height: 1800px;
+        }
+        .our_values .box .image {
+          padding: 0;
+          width: 1200px;
+          height: 1686px;
+        }
+        .a_word_from_all_of_us {
+          margin: 64px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: start;
+    padding: 40px 0;
+    gap: 20px;
+  }
 
-    }
+  /* Ảnh 1: cột trái, hàng 1 */
+  .a_word_from_all_of_us .image:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    padding-bottom: 20%;
+    height: auto;
+  }
+
+  /* Ảnh 2: cột phải, hàng 1 */
+  .a_word_from_all_of_us .image:last-child {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    padding-top: 20%;
+    height: auto;
+    justify-self: end; /* đẩy sang phải giống ảnh mẫu */
+  }
+
+  /* Content: chiếm cả 2 cột, hàng 2, nằm dưới cùng */
+  .a_word_from_all_of_us .content {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .a_word_from_all_of_us img {
+    height: auto;
+    object-fit: contain;
+  }
+      }
+      @media (max-width: 899px) {
+        .our_commitments {
+          padding: 32px 16px;
+        }
+        .commit_small {
+          display: block;
+        }
+
+        .commit_small > div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .commit_small img {
+          position: relative; /* bỏ vai trò "nền phủ", ảnh giờ là 1 khối bình thường */
+          height: 750px; /* tuỳ chỉnh độ cao ảnh, ảnh mẫu khá cao */
+        }
+
+        .commit_small .content {
+          position: static; /* bỏ absolute, không đè lên ảnh nữa */
+          width: 100%;
+          height: auto;
+          color: #111; /* đổi từ trắng sang màu tối vì không còn trên nền ảnh tối */
+          padding: 20px 16px;
+          order: 1; /* đưa content lên trên */
+          align-items: center; /* giữ căn giữa chữ như thiết kế gốc */
+        }
+
+        .commit_small h3 {
+          font-size: 21px;
+          margin-bottom: 20px;
+        }
+
+        .commit_small p {
+          color: #666; /* label "SUSTAINABILITY AT CANVA" đổi màu tối */
+        }
+        .our_values .box {
+          background-color: rgb(244, 244, 244);
+          border-radius: 18px;
+          display: block !important;
+          width: 310px;
+          height: 500px;
+          margin-right: 30px;
+        }
+        .our_values .box .image {
+          width: 287px;
+          height: 274px;
+          padding: 10% 5%;
+        }
+        .our_values {
+          padding: 64px 32px;
+          box-sizing: border-box;
+        }
+        .The_slick {
+          width: 100%; /* Chiếm trọn chiều rộng để tính toán tràn lề */
+          padding: 0 60px;
+          box-sizing: border-box;
+        }
+
+        
+
+        .awards_section .awards_grid {
+          flex-direction: column;
+          align-items: center;
+          gap: 40px; /* khoảng cách giữa các award */
+        }
+
+        .awards_section .box,
+        .awards_section .box:nth-child(2),
+        .awards_section .box:nth-child(4) {
+          width: 100%;
+          width: 500px;
+          align-items: center;
+        }
+        .awards_section .box:nth-child(1) .image{
+          max-width: 100px;
+        }
+        .awards_section .box:nth-child(5) .image {
+          max-width: 90px;
+        }
+        .awards_section .box:nth-child(2) .image{
+          max-width: 160px;
+        }
+        .awards_section .box:nth-child(3) .image {
+          max-width: 140px;
+        }
+        .awards_section .box:nth-child(4) .image{
+          max-width: 180px;
+        }
+
+        .awards_section .image {
+          justify-content: center;
+          align-items: center;
+        }
+
+        .awards_section .content {
+          width: 100%;
+        }
+        .awards_section .content .p1 {
+          width: 500px;
+        }
+
+        .awards_section .content .p2 {
+          width: 500px;
+        }
+        .about {
+    display: block;
+  }
+
+  .about .box1 {
+    height: auto;
+    padding: 20px 4%;
+  }
+.app-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .app-buttons img {
+    height: 40px;
+    width: auto;
+  }
+  .box1 a{
+    padding: 0;
+    border: 0;
+    margin: 28px 0;
+  }
+  .box1 .icon{
+    display: none;
+  }
+  .box2 {
+    padding: 0 4%;
+    display: block !important; /* bỏ flex 3 cột ngang */
+  }
+
+  .menu_column {
+    display: block;
+    width: 100%;
+    gap: 0;
+  }
+
+  .menu_group {
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu_group .group_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8px;
+    font-size: 18px;
+    color: #111;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .accordion-icon {
+    font-size: 14px;
+    color: #999;
+    transition: transform 0.3s ease;
+  }
+
+  .menu_group.open .accordion-icon {
+    transform: rotate(180deg);
+  }
+
+  /* Ẩn danh sách con mặc định, chỉ hiện khi .open */
+  .menu_group ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .menu_group.open ul {
+    max-height: 600px; /* đủ lớn để chứa hết item, không cần chính xác tuyệt đối */
+  }
+
+  .menu_group ul li {
+    padding: 10px 8px;
+  }
+
+  .end {
+    display: block;
+  }
+  .end .first,
+  .end .second{
+    display: block;
+  }
+  .end .global,
+  .end .second > div{
+    padding: 24px 0;
+  }
+      }
     </style>
   </head>
 
   <body>
     <div class="container1_nappa">
+      <button class="hamburger-btn" aria-label="Menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
       <div class="logo">
         <img
           alt=""
@@ -95,7 +468,7 @@
             </div>
             <div>
               <div class="type">Print design</div>
-              
+
               <div>Business cards</div>
               <div>Invitations</div>
               <div>Flyers</div>
@@ -241,7 +614,7 @@
               <div>Contact us</div>
             </div>
             <div>
-              <div class="">K-12 teachers</div>
+              <div class="type">K-12 teachers</div>
               <div>Canva for teachers</div>
               <div>Eligibility guidelines</div>
               <div>Teaching resources</div>
@@ -406,7 +779,7 @@
             style="object-fit: contain; object-position: center center"
           />
         </div>
-        <div class="image">
+        <div class="image opaquebg">
           <img
             src="https://static-cse.canva.com/_next/static/media/salesforce.file.a3641534.svg"
             alt="Salesforce"
@@ -558,6 +931,11 @@
     <div class="our_commitments">
       <h2>Our commitments</h2>
       <div class="commit_big">
+        <div class="content">
+          <p>Canva Step Two</p>
+          <h3>Doing the most good we can with our Two-Step Plan.</h3>
+          <button>Learn more</button>
+        </div>
         <img
           alt="A student holding chemistry text books, standing in front of a rustic home"
           height="480"
@@ -567,14 +945,14 @@
           src="https://content-management-files.canva.com/ac80d8c5-f7c7-4111-9bab-bbdb090559a7/About_StepTwo-Desktop.jpg"
           style="object-fit: cover; object-position: center center"
         />
-        <div class="content">
-          <p>Canva Step Two</p>
-          <h3>Doing the most good we can with our Two-Step Plan.</h3>
-          <button>Learn more</button>
-        </div>
       </div>
       <div class="commit_small">
         <div>
+          <div class="content">
+            <p>Sustainability at Canva</p>
+            <h3>It’s our world, and our responsibility.</h3>
+            <button>Learn more</button>
+          </div>
           <img
             alt="A photo of a hill"
             height="1176"
@@ -584,13 +962,13 @@
             src="https://content-management-files.canva.com/61bb06dc-76a5-4f72-b20e-83d28dedbea7/Sustainability.png"
             style="object-fit: cover; object-position: center center"
           />
-          <div class="content">
-            <p>Sustainability at Canva</p>
-            <h3>It’s our world, and our responsibility.</h3>
-            <button>Learn more</button>
-          </div>
         </div>
         <div>
+          <div class="content">
+            <p>Trust Center</p>
+            <h3>Creating a safe and trusted place for creativity.</h3>
+            <button>Learn more</button>
+          </div>
           <img
             alt="A photo of a laptop on a table"
             height="1176"
@@ -600,11 +978,6 @@
             src="https://content-management-files.canva.com/cc83142e-7869-4564-bfd7-e76d077c09a8/Trust.png"
             style="object-fit: cover; object-position: center center"
           />
-          <div class="content">
-            <p>Trust Center</p>
-            <h3>Creating a safe and trusted place for creativity.</h3>
-            <button>Learn more</button>
-          </div>
         </div>
       </div>
     </div>
@@ -903,7 +1276,7 @@
           <h3>AI in the Classroom: A new Canva certification for teachers</h3>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="a_word_from_all_of_us">
       <div class="image">
         <img
@@ -948,6 +1321,12 @@
     <div class="about wow animate__animated animate__slideInUp">
       <div class="box1">
         <div>Download Canva for free</div>
+        <div class="app-buttons">
+    <a href="#">
+<img class="eieNhW7" alt="" src="https://content-management-files.canva.com/6122da46-4357-4423-a18e-35bee4a9a33e/GetItOnGooglePlay_Badge_Web_color.svg">    </a>
+    <a href="#">
+<img class="eieNhW7" alt="" src="https://content-management-files.canva.com/38c1cf77-57db-46b6-8d00-82a93ecf99ac/Download_on_the_App_Store_Badge.svg">    </a>
+  </div>
         <div class="icon">
           <span>
             <a href="">Windows</a>
@@ -958,138 +1337,171 @@
         </div>
       </div>
       <div class="box2">
-  
-  <div class="menu_column">
-    <div class="menu_group">
-      <div class="group_title">Product</div>
-      <ul>
-        <li>Latest launches</li>
-        <li>Visual Suite</li>
-        <li>Canva AI</li>
-        <li>Brand management</li>
-        <li>Social media</li>
-        <li>Features</li>
-        <li>Print</li>
-        <li>Apps Marketplace</li>
-        <li>Affinity 
-<i>↗</i>
-</li>
-      </ul>
-    </div>
-    
-    <div class="menu_group">
-      <div class="group_title">Plans</div>
-      <ul>
-        <li>Pricing</li>
-        <li>Pro</li>
-        <li>Business</li>
-        <li>Enterprise</li>
-        <li>Education</li>
-        <li>Higher education</li>
-        <li>Nonprofits</li>
-        <li>Contact Sales</li>
-      </ul>
-    </div>
-  </div>
+        <div class="menu_column">
+          <div class="menu_group">
+            <div class="group_title">
+              Product
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </div>
+            <ul>
+              <li>Latest launches</li>
+              <li>Visual Suite</li>
+              <li>Canva AI</li>
+              <li>Brand management</li>
+              <li>Social media</li>
+              <li>Features</li>
+              <li>Print</li>
+              <li>Apps Marketplace</li>
+              <li>
+                Affinity
+                <i>↗</i>
+              </li>
+            </ul>
+          </div>
 
-  <div class="menu_column">
-    <div class="menu_group">
-      <div class="group_title">About</div>
-      <ul>
-        <li>About Canva</li>
-        <li>Newsroom</li>
-        <li>Events</li>
-        <li>Canva Originals</li>
-        <li>Careers 
+          <div class="menu_group">
+            <div class="group_title">
+              Plans
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </div>
+            <ul>
+              <li>Pricing</li>
+              <li>Pro</li>
+              <li>Business</li>
+              <li>Enterprise</li>
+              <li>Education</li>
+              <li>Higher education</li>
+              <li>Nonprofits</li>
+              <li>Contact Sales</li>
+            </ul>
+          </div>
+        </div>
 
-<i>↗</i>
+        <div class="menu_column">
+          <div class="menu_group">
+            <div class="group_title">
+              About
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </div>
+            <ul>
+              <li>About Canva</li>
+              <li>Newsroom</li>
+              <li>Events</li>
+              <li>Canva Originals</li>
+              <li>
+                Careers
 
-</li>
-        <li>Social impact</li>
-        <li>Sustainability</li>
-        <li>Case studies</li>
-      </ul>
-    </div>
-    
-    <div class="menu_group">
-      <div class="group_title">Community</div>
-      <ul>
-        <li>Canva Communities</li>
-        <li>Creators</li>
-        <li>Affiliates</li>
-        <li>Canva Represents Fund</li>
-        <li>Content partners</li>
-        <li>Business partner directory</li>
-        <li>Canva Developers 
+                <i>↗</i>
+              </li>
+              <li>Social impact</li>
+              <li>Sustainability</li>
+              <li>Case studies</li>
+            </ul>
+          </div>
 
-<i>↗</i>
+          <div class="menu_group">
+            <div class="group_title">
+              Community
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </div>
+            <ul>
+              <li>Canva Communities</li>
+              <li>Creators</li>
+              <li>Affiliates</li>
+              <li>Canva Represents Fund</li>
+              <li>Content partners</li>
+              <li>Business partner directory</li>
+              <li>
+                Canva Developers
 
-</li>
-      </ul>
-    </div>
-    
-    <div class="menu_group">
-      <div class="group_title">Inspiration</div>
-      <ul>
-        <li>Design Trends</li>
-        <li>AI creativity podcast 
+                <i>↗</i>
+              </li>
+            </ul>
+          </div>
 
-<i>↗</i>
+          <div class="menu_group">
+            <div class="group_title">
+              Inspiration
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </div>
+            <ul>
+              <li>Design Trends</li>
+              <li>
+                AI creativity podcast
 
-</li>
-        <li>Learn blog</li>
-        <li>Templates Marketplace</li>
-        <li>Font pairing</li>
-        <li>Color wheel</li>
-        <li>Colors</li>
-        <li>Color palette generator</li>
-      </ul>
-    </div>
-  </div>
+                <i>↗</i>
+              </li>
+              <li>Learn blog</li>
+              <li>Templates Marketplace</li>
+              <li>Font pairing</li>
+              <li>Color wheel</li>
+              <li>Colors</li>
+              <li>Color palette generator</li>
+            </ul>
+          </div>
+        </div>
 
-  <div class="menu_column">
-    <div class="menu_group">
-      <div class="group_title">Help</div>
-      <ul>
-        <li>Help Center</li>
-        <li>Security</li>
-        <li>Trust Center</li>
-        <li>Canva Safe AI</li>
-        <li>Accessibility</li>
-        <li>Enterprise services</li>
-        <li>Design School 
+        <div class="menu_column">
+          <div class="menu_group">
+            <div class="group_title">
+              Help
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </div>
+            <ul>
+              <li>Help Center</li>
+              <li>Security</li>
+              <li>Trust Center</li>
+              <li>Canva Safe AI</li>
+              <li>Accessibility</li>
+              <li>Enterprise services</li>
+              <li>
+                Design School
 
-<i>↗</i>
+                <i>↗</i>
+              </li>
+              <li>Sitemap</li>
+            </ul>
+          </div>
 
-</li>
-        <li>Sitemap</li>
-      </ul>
-    </div>
-    
-    <div class="menu_group">
-      <div class="group_title">Tools</div>
-      <ul>
-        <li>QR code generator</li>
-        <li>AI logo generator</li>
-        <li>Signature generator</li>
-        <li>Business name generator</li>
-        <li>PDF converter</li>
-        <li>PDF to JPG converter</li>
-        <li>JPG to PDF converter</li>
-        <li>Graph maker</li>
-      </ul>
-    </div>
-  </div>
-
-</div>
+          <div class="menu_group">
+            <div class="group_title">
+              Tools
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </div>
+            <ul>
+              <li>QR code generator</li>
+              <li>AI logo generator</li>
+              <li>Signature generator</li>
+              <li>Business name generator</li>
+              <li>PDF converter</li>
+              <li>PDF to JPG converter</li>
+              <li>JPG to PDF converter</li>
+              <li>Graph maker</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="end">
-        <div class="first">
-          <div class="global">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.288-.244-2.52-.687-3.65v-.1h-.04A10.003 10.003 0 0 0 12 2C6.477 2 2 6.477 2 12Zm12.653-8.078A8.526 8.526 0 0 1 19.63 8.25h-3.457c-.317-1.74-.848-3.236-1.52-4.328ZM20.2 9.75h-3.813c.075.723.114 1.476.114 2.25s-.04 1.527-.114 2.25h3.813A8.51 8.51 0 0 0 20.5 12a8.51 8.51 0 0 0-.301-2.25Zm-.569 6h-3.457c-.317 1.74-.848 3.236-1.52 4.328a8.526 8.526 0 0 0 4.977-4.328Zm-4.755-1.5a20.109 20.109 0 0 0 0-4.5h-5.75a20.116 20.116 0 0 0 0 4.5h5.75Zm-5.519 1.5h5.288C14.08 18.593 12.953 20.5 12 20.5c-.953 0-2.081-1.907-2.644-4.75Zm-1.529 0c.317 1.74.848 3.236 1.52 4.328A8.526 8.526 0 0 1 4.37 15.75h3.457Zm-.213-1.5H3.801A8.51 8.51 0 0 1 3.5 12c0-.779.105-1.533.301-2.25h3.813A21.9 21.9 0 0 0 7.5 12c0 .774.04 1.527.114 2.25ZM12 3.5c.953 0 2.081 1.907 2.644 4.75H9.356C9.92 5.407 11.047 3.5 12 3.5ZM4.37 8.25h3.457c.317-1.74.848-3.236 1.52-4.328A8.525 8.525 0 0 0 4.37 8.25Z" fill="currentColor"></path></svg>
-            <div>English (US)</div>
-          </div> 
-          <div class="icon">
+      <div class="first">
+        <div class="global">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-1.288-.244-2.52-.687-3.65v-.1h-.04A10.003 10.003 0 0 0 12 2C6.477 2 2 6.477 2 12Zm12.653-8.078A8.526 8.526 0 0 1 19.63 8.25h-3.457c-.317-1.74-.848-3.236-1.52-4.328ZM20.2 9.75h-3.813c.075.723.114 1.476.114 2.25s-.04 1.527-.114 2.25h3.813A8.51 8.51 0 0 0 20.5 12a8.51 8.51 0 0 0-.301-2.25Zm-.569 6h-3.457c-.317 1.74-.848 3.236-1.52 4.328a8.526 8.526 0 0 0 4.977-4.328Zm-4.755-1.5a20.109 20.109 0 0 0 0-4.5h-5.75a20.116 20.116 0 0 0 0 4.5h5.75Zm-5.519 1.5h5.288C14.08 18.593 12.953 20.5 12 20.5c-.953 0-2.081-1.907-2.644-4.75Zm-1.529 0c.317 1.74.848 3.236 1.52 4.328A8.526 8.526 0 0 1 4.37 15.75h3.457Zm-.213-1.5H3.801A8.51 8.51 0 0 1 3.5 12c0-.779.105-1.533.301-2.25h3.813A21.9 21.9 0 0 0 7.5 12c0 .774.04 1.527.114 2.25ZM12 3.5c.953 0 2.081 1.907 2.644 4.75H9.356C9.92 5.407 11.047 3.5 12 3.5ZM4.37 8.25h3.457c.317-1.74.848-3.236 1.52-4.328A8.525 8.525 0 0 0 4.37 8.25Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <div>English (US)</div>
+        </div>
+        <div class="icon">
           <i class="fa-brands fa-linkedin"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-facebook"></i>
@@ -1097,14 +1509,16 @@
           <i class="fa-brands fa-pinterest"></i>
           <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-youtube"></i>
-          </div>
-        </div>
-        <div class="second">
-          <span>Privacy</span>
-          <span>Terms</span>
-          <p>© 2026 All Rights Reserved</p>
         </div>
       </div>
+      <div class="second">
+        <div>
+          <span>Privacy</span>
+          <span>Terms</span>
+        </div>
+        <p>© 2026 All Rights Reserved</p>
+      </div>
+    </div>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -1113,6 +1527,100 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".menu_group .group_title").forEach((title) => {
+    title.addEventListener("click", () => {
+      const group = title.closest(".menu_group");
+      group.classList.toggle("open");
+    });
+  });
+});
+</script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const categories = [
+      { key: "design", label: "Design", selector: ".hidden_design" },
+      { key: "product", label: "Product", selector: ".hidden_product" },
+      { key: "plans", label: "Plans", selector: ".hidden_plans" },
+      { key: "business", label: "Business", selector: ".hidden_business" },
+      { key: "education", label: "Education", selector: ".hidden_education" },
+      { key: "help", label: "Help", selector: ".hidden_help" },
+    ];
+
+    const overlay = document.createElement("div");
+    overlay.className = "mobile-menu-overlay";
+    overlay.innerHTML = `
+      <div class="mobile-menu-backdrop"></div>
+      <div class="mobile-menu-panel">
+        <div class="mobile-menu-list">
+          <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="Đóng menu">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="mobile-menu-items">
+            ${categories
+              .map(
+                (c) => `
+              <button class="mobile-menu-row" data-category="${c.key}">
+                <span>${c.label}</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>`
+              )
+              .join("")}
+          </div>
+          <div class="mobile-menu-footer">
+            <button class="mobile-menu-login">Log in</button>
+            <button class="mobile-menu-signup">Sign up</button>
+          </div>
+        </div>
+        <div class="mobile-menu-detail">
+          <div class="mobile-menu-detail-header">
+            <button class="mobile-menu-back" aria-label="Quay lại">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <h3 class="mobile-menu-detail-title"></h3>
+          </div>
+          <div class="mobile-menu-detail-content"></div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    const hamburgerBtn = document.querySelector(".hamburger-btn");
+    const panel = overlay.querySelector(".mobile-menu-panel");
+    const detailTitle = overlay.querySelector(".mobile-menu-detail-title");
+    const detailContent = overlay.querySelector(".mobile-menu-detail-content");
+
+    hamburgerBtn.addEventListener("click", () => {
+      overlay.classList.add("open");
+      panel.classList.remove("show-detail");
+    });
+
+    overlay.querySelector(".mobile-menu-close").addEventListener("click", () => {
+      overlay.classList.remove("open");
+    });
+
+    overlay.querySelector(".mobile-menu-backdrop").addEventListener("click", () => {
+      overlay.classList.remove("open");
+    });
+
+    overlay.querySelectorAll(".mobile-menu-row").forEach((row) => {
+      row.addEventListener("click", () => {
+        const cat = categories.find((c) => c.key === row.dataset.category);
+        const sourcePanel = document.querySelector(cat.selector);
+        detailTitle.textContent = cat.label;
+        detailContent.innerHTML = sourcePanel ? sourcePanel.innerHTML : "";
+        panel.classList.add("show-detail");
+      });
+    });
+
+    overlay.querySelector(".mobile-menu-back").addEventListener("click", () => {
+      panel.classList.remove("show-detail");
+    });
+  });
+</script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
@@ -1180,8 +1688,8 @@
       showTab(1);
     </script>
     <script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

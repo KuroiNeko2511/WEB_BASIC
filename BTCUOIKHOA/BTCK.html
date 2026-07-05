@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Canva</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/9d86ff7bf6.js"
@@ -39,8 +37,11 @@
         .careers {
           margin: 64px 32px;
         }
-        .feedback {
-          padding: 64px 32px;
+        .feedback{
+          padding: 40px 20px;
+        }
+        .tabcontrol{
+          top: 85%;
         }
         .newsroom {
           padding: 64px 32px;
@@ -51,7 +52,7 @@
         }
         .feedback .para {
           font-size: 20px;
-          height: auto; /* bỏ height cứng 210px, để chữ tự co theo nội dung */
+          height: auto; 
         }
         .The_slick {
           padding: 0;
@@ -75,14 +76,14 @@
       }
       @media (max-width: 900px) {
         .container1_nappa {
-          justify-content: flex-start; /* bỏ space-between, các item bám sát nhau bên trái */
-          gap: 12px; /* khoảng cách giữa hamburger và logo */
+          justify-content: flex-start; 
+          gap: 12px; 
         }
         .more {
           display: none;
         }
         .register {
-          margin-left: auto; /* đẩy .register (Log in) về sát mép phải */
+          margin-left: auto; 
         }
         .register .sign_up {
           display: none;
@@ -126,7 +127,7 @@
           font-size: 2.5rem;
         }
         .info {
-          height: 290px;
+          /* height: 290px; */
         }
         .info span {
           margin-bottom: 30px;
@@ -146,12 +147,12 @@
           flex-direction: column;
         }
         .commit_big img {
-          height: 600px !important; /* tăng từ 300px lên, giảm mức độ crop */
+          height: 600px; 
           object-fit: cover !important;
           object-position: right top !important;
         }
         .commit_big .content {
-          position: static; /* bỏ overlay, đưa xuống dưới ảnh */
+          position: static; 
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -160,7 +161,7 @@
           height: auto;
           padding: 24px 20px;
           color: #111;
-          box-sizing: border-box; /* đổi màu chữ vì không còn nằm trên ảnh tối nữa */
+          box-sizing: border-box; 
         }
         .commit_big h3,
         .commit_small h3 {
@@ -169,7 +170,7 @@
         }
 
         .commit_small {
-          flex-direction: row; /* vẫn giữ 2 cột song song */
+          flex-direction: row; 
           height: auto;
           align-items: flex-start;
         }
@@ -182,8 +183,8 @@
         }
 
         .commit_small img {
-          position: relative; /* bỏ vai trò "nền phủ", ảnh giờ là 1 khối bình thường */
-          height: 400px; /* tuỳ chỉnh độ cao ảnh, ảnh mẫu khá cao */
+          position: relative; 
+          height: 400px; 
           order: 2; /* đưa ảnh xuống dưới */
         }
 
@@ -194,11 +195,11 @@
           color: #111; /* đổi từ trắng sang màu tối vì không còn trên nền ảnh tối */
           padding: 20px 0;
           order: 1; /* đưa content lên trên */
-          align-items: center; /* giữ căn giữa chữ như thiết kế gốc */
+          align-items: center; 
         }
 
         .commit_small p {
-          color: #666; /* label "SUSTAINABILITY AT CANVA" đổi màu tối */
+          color: #666; 
         }
         .awards_section .awards_grid {
           flex-direction: column;
@@ -208,8 +209,8 @@
           padding: 64px 32px;
         }
         .feedback .image {
-          width: 100%; /* full width khi xếp dọc */
-          height: 280px; /* giảm mạnh chiều cao */
+          width: 100%; 
+          height: 280px; 
         }
         .feedback .content {
           width: 100%;
@@ -266,7 +267,6 @@
           gap: 20px;
         }
 
-        /* Ảnh 1: cột trái, hàng 1 */
         .a_word_from_all_of_us .image:first-child {
           grid-column: 1;
           grid-row: 1;
@@ -274,18 +274,15 @@
           padding-bottom: 20%;
           height: auto;
         }
-
-        /* Ảnh 2: cột phải, hàng 1 */
         .a_word_from_all_of_us .image:last-child {
           grid-column: 2;
           grid-row: 1;
           width: 100%;
           padding-top: 20%;
           height: auto;
-          justify-self: end; /* đẩy sang phải giống ảnh mẫu */
+          justify-self: end;
         }
 
-        /* Content: chiếm cả 2 cột, hàng 2, nằm dưới cùng */
         .a_word_from_all_of_us .content {
           grid-column: 1 / 3;
           grid-row: 2;
@@ -296,6 +293,10 @@
         .a_word_from_all_of_us img {
           height: auto;
           object-fit: contain;
+        }
+        .feedback,
+        .newsroom{
+          padding: 48px 24px;
         }
       }
       @media (max-width: 899px) {
@@ -347,11 +348,12 @@
           background: white;
         }
         .our_values .box {
-          background-color: rgb(244, 244, 244);
-          border-radius: 18px;
-          display: block !important;
-          width: 210px;
-          height: 450px;
+  background-color: rgb(244, 244, 244);
+  border-radius: 18px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 210px;
+  height: 450px;
         }
         .our_values .box .image {
           width: 210px;
@@ -514,10 +516,16 @@
           font-size: 18px;
           margin-bottom: 5%;
         }
+         .commit_big img {
+          height: 550px; 
+        }
+        .commit_small img{
+          height: 550px; 
+        }
       }
       @media (max-width: 720px) {
         .info {
-          height: 350px;
+          /* height: 350px; */
           padding: 48px 24px;
         }
         .info_achiv div {
@@ -529,6 +537,12 @@
           justify-content: center; /* đổi từ space-between (kế thừa) sang center */
           row-gap: 24px; /* khoảng cách giữa 2 hàng khi bị xuống dòng */
           column-gap: 5%;
+        }
+                 .commit_big img {
+          height: 500px; 
+        }
+        .commit_small img{
+          height: 500px; 
         }
       }
       @media (max-width: 600px) {
@@ -634,7 +648,12 @@
       margin: 0;
     }
   }
-
+         .commit_big img {
+          height: 450px; 
+        }
+        .commit_small img{
+          height: 450px; 
+        }
       }
       @media (max-width: 560px) {
         .logos_trustedby{
@@ -643,18 +662,39 @@
 .trustedby .image {
           width: 138px;
         }
-      }
-      @media (max-width: 546px) {
-        .info_achiv div {
-          width: 45%;
+                 .commit_big img {
+          height: 420px; 
+        }
+        .commit_small img{
+          height: 420px; 
         }
       }
       @media (max-width: 546px) {
+        .info_achiv div {
+          width: 43%;
+        }
+                 .commit_big img {
+          height: 380px; 
+        }
+        .commit_small img{
+          height: 380px; 
+        }
+      }
+      @media (max-width: 368px) {
+        .info{
+          /* height: 560px; */
+        }
         .info_achiv div {
           width: 100%;
         }
 .trustedby .image {
           width: 139px;
+        }
+                 .commit_big img {
+          height: 210px; 
+        }
+        .commit_small img{
+          height: 210px; 
         }
       }
     </style>
@@ -1041,7 +1081,9 @@
     <div class="our_values">
       <h2>Our values</h2>
       <div class="The_slick">
-        <div class="box">
+        <button class="slick-prev" aria-label="Previous"></button>
+        <div class="values_track">
+<div class="box">
           <div class="image">
             <img
               src="https://content-management-files.canva.com/77a7e4fe-3a6e-4a25-a0ab-2fb3d01dd412/1-Beforceforgood.png"
@@ -1149,6 +1191,8 @@
             success!
           </p>
         </div>
+        </div>
+         <button class="slick-next" aria-label="Next"></button>
       </div>
     </div>
     <div class="our_commitments">
@@ -1790,14 +1834,6 @@
         });
       });
     </script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document
@@ -1810,6 +1846,7 @@
           });
       });
     </script>
+    <!-- dom -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const categories = [
@@ -1907,42 +1944,35 @@
       });
     </script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".The_slick").slick({
-          dots: false,
-          arrows: true,
-          infinite: false,
-          speed: 300,
-          variableWidth: true,
-          slidesToShow: 4,
-          slidesToScroll: 2,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
+    <!-- cuộn slick -->
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".values_track");
+    const prevBtn = document.querySelector(".The_slick .slick-prev");
+    const nextBtn = document.querySelector(".The_slick .slick-next");
+
+    function scrollByViewport(direction) {
+      track.scrollBy({
+        left: direction * track.clientWidth,
+        behavior: "smooth",
       });
-    </script>
+    }
+
+    nextBtn.addEventListener("click", () => scrollByViewport(1));
+    prevBtn.addEventListener("click", () => scrollByViewport(-1));
+
+    function updateButtons() {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      prevBtn.classList.toggle("is-hidden", track.scrollLeft <= 0);
+      nextBtn.classList.toggle("is-hidden", track.scrollLeft >= maxScroll - 1);
+    }
+
+    track.addEventListener("scroll", updateButtons);
+    window.addEventListener("resize", updateButtons);
+    updateButtons();
+  });
+</script>
+    <!-- navbar -->
     <script>
       const navbar = document.querySelector(".container1_nappa");
       let lastScroll = 0;
@@ -1957,6 +1987,7 @@
         lastScroll = currentScroll;
       });
     </script>
+    <!-- tabcontrol -->
     <script>
       const buttons = document.querySelectorAll(".tabcontrol button");
       const tabs = document.querySelectorAll(".tab1,.tab2,.tab3,.tab4");

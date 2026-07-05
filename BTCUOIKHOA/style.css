@@ -17,7 +17,6 @@
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 80px;
   width: 100%;
   background-color: white;
@@ -204,6 +203,8 @@
   position: relative;
   display: flex;
   padding: 5px 10px;
+  height: 36px;
+  align-items: center;
   background-color: white;
   border: 0;
   font-weight: 500;
@@ -213,18 +214,19 @@
   transition: 0.5s;
 }
 .btn_more:hover .hidden {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 .btn_more:hover {
-  background-color: #b093d6;
-  color: #63428e;
-}
-.design {
+  background-color: #d0b7f0;
+  color: #634487;
 }
 .hidden {
-  display: none;
-  position: absolute;
-  top: 28px;
+  display: flex;  
+  position: fixed;
+  top: 58px;
   left: 0;
   color: black;
   border: 3px solid rgb(246, 241, 241);
@@ -233,6 +235,14 @@
   background-color: white;
   gap: 2px;
   column-rule: 2px solid rgb(246, 241, 241);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px); 
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  width: max-content;              /* tự co theo nội dung thật (nhiều/ít cột) */
+  max-width: calc(100vw - 32px);    /* không bao giờ rộng hơn viewport trừ lề 16px mỗi bên */
+  overflow-x: auto;
+  pointer-events: none;
 }
 .hidden .type {
   font-weight: 500;
@@ -244,43 +254,21 @@
 .hidden div div{
   font-weight: 500;
   width: 160px;
+  margin: 2px;
+  border-radius: 10px;
   padding: 10px;
   text-align: start;
   color: black;
   background-color: white;
+  transition: 0.5 ease-in;
 }
 .hidden div div:hover {
-  background-color: rgb(217, 214, 214);
+  background-color: rgb(234, 232, 232);
 }
 .hidden div .type:hover {
   background-color: white;
 }
-.hidden_design {
-  position: absolute;
-  left: -420px;
-}
-.hidden_product {
-  position: absolute;
-  left: -190px;
-}
-.hidden_plans {
-  position: absolute;
-  left: -90px;
-}
-.hidden_business {
-  position: absolute;
-  left: -420px;
-}
-.hidden_education {
-  position: absolute;
-  left: -500px;
-}
-.hidden_help {
-  position: absolute;
-  left: -200px;
-}
-.register {
-}
+
 .btn_register {
     width: 70px;
     height: 32px;
@@ -316,10 +304,10 @@
   box-sizing: border-box;
 }
 .slogan h1 {
-  width: 33%;
+  width: 36%;
   position: absolute;
-  left: 33%;
-  top: 320px;
+  left: 32%;
+  top: 250px;
   font-size: 3.5rem;
   font-weight: 650;
   text-align: center;
@@ -371,7 +359,7 @@
 .anh6 {
   position: absolute;
   left: 62%;
-  top: 550px;
+  top: 500px;
   width: 17%;
   height: 180px;
 }
@@ -380,7 +368,8 @@
 
 
 .trustedby {
-  padding: 48px 2%;
+  padding: 64px 32px;
+  padding-bottom: 32px;
 }
 .trustedby p {
   width: 100%;
@@ -393,11 +382,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 7%;
-  justify-content: center;
+  justify-content: space-around;
 }
 .trustedby .image {
-  width: 125.8px;
+  width: 120px;
   height: 100px;
+  margin-bottom: 30px;
   background-color: #ffffff;
 }
 .trustedby .image img{
@@ -417,21 +407,23 @@
   box-sizing: border-box;
   width: 100%;
   height: 350px;
-  background-color: #412870;
-  padding: 6% 3%;
+  background-color: #3a1b72;
+  padding: 64px 32px;
   gap: 50px;
   align-content: center;
 }
-.info > p {
-  margin-bottom: 50px;
+.info span {
+  display: block;
   color: rgb(206, 184, 219);
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  margin-bottom: 60px;
 }
 .info_achiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
   h3 {
     text-align: center;
     color: white;
@@ -439,13 +431,14 @@
     font-size: 3rem;
   }
   p {
+    margin: 0;
     text-align: center;
     color: white;
   }
 }
 .info_achiv div {
   height: 100%;
-  width: 20%;
+  width: 21%;
 }
 
 
@@ -547,7 +540,7 @@
 }
 .our_values h3 {
   font-size: 18px;
-  margin: 0 32px;
+  margin: 0 24px;
   color: #111;
     font-weight: 640;
 }
@@ -558,7 +551,7 @@
 .our_values p {
   font-size: 17px;
   color: #666;
-    margin: 0 32px;
+    margin: 10px 24px;
 }
 
 
@@ -608,14 +601,16 @@
 }
 .commit_big p,
 .commit_small p {
-  font-size: 12px;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
 .commit_big h3 {
-  font-size: 34px;
-  line-height: 1.2;
+  font-size: 37px;
+  /* line-height: 1.2; */
+font-weight: 600;
   margin-bottom: 25px;
 }
 .commit_big button,
@@ -625,7 +620,8 @@
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  background: whitesmoke;
+  font-weight: 500;
+  background: rgb(250, 249, 249);
 }
 button:hover {
   background: white;
@@ -664,7 +660,7 @@ button:hover {
 }
 .commit_small h3 {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 100%;
   font-size: 36px;
 }
@@ -750,7 +746,7 @@ button:hover {
   padding: 10% 7%;
   position: relative;
 }
-.tab1,
+/* .tab1,
 .tab2,
 .tab3,
 .tab4 {
@@ -762,6 +758,30 @@ button:hover {
 }
 .tab1 {
   display: flex;
+} */
+ .tab1,
+.tab2,
+.tab3,
+.tab4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 6%;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+.tab1.active,
+.tab2.active,
+.tab3.active,
+.tab4.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
 }
 .feedback .image {
   width: 50%;
@@ -786,8 +806,7 @@ button:hover {
   margin-bottom: 10%;
 }
 .feedback .para {
-  font-size: 24px;
-  height: 210px;
+  font-size: 3em;
   margin-bottom: 10%;
 }
 .feedback .p1 {
@@ -804,7 +823,7 @@ button:hover {
 .tabcontrol {
   position: absolute;
   left: 52.5%;
-  top: 78%;
+  top: 84%;
   display: flex;
   gap: 15px;
   z-index: 30;
@@ -879,7 +898,7 @@ button:hover {
 
 
 .newsroom {
-      padding: 5% 5%;
+      padding: 5% 7%;
       text-align: center;
       box-sizing: border-box;
     }
@@ -921,18 +940,20 @@ button:hover {
       border-radius: 10px;
     }
     .newsroom .image img{
-      /* width: 100%;
-      height: 100%; */
-      border-radius: 10px;
+      border-radius: 18px;
         transition: 0.2s ease;
     } 
     .newsroom p {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 2px;
       text-align: start;
       font-weight: 500;
       color: gray;
     }
     .newsroom h3 {
       text-align: start;
+      font-weight: 600;
     }
 
 
@@ -1029,6 +1050,9 @@ button:hover {
   width: 100%;
 }
 
+  .about .fa-chevron-down{
+    display: none;
+  }
 /* Định dạng cho từng cột dọc */
 .menu_column {
   flex: 1; /* Chia đều 3 cột có độ rộng bằng nhau */

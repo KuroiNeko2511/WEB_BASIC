@@ -19,10 +19,14 @@
     <style>
       @media (max-width: 1200px) {
         .container1_nappa,
-        .logoafter{
+        .logoafter {
           padding: 0 3%;
         }
-        .a_word_from_all_of_us{
+        .slogan h1 {
+          font-size: 3rem;
+          font-weight: 600;
+        }
+        .a_word_from_all_of_us {
           margin: 64px 32px;
         }
         .slogan h1 {
@@ -31,6 +35,26 @@
         .about .box1 {
           padding-left: 3%;
           padding-right: 0;
+        }
+        .careers {
+          margin: 64px 32px;
+        }
+        .feedback {
+          padding: 64px 32px;
+        }
+        .newsroom {
+          padding: 64px 32px;
+          padding-top: 20px;
+        }
+        .feedback .image {
+          height: 380px;
+        }
+        .feedback .para {
+          font-size: 20px;
+          height: auto; /* bỏ height cứng 210px, để chữ tự co theo nội dung */
+        }
+        .The_slick {
+          padding: 0;
         }
       }
       @media (max-width: 1199px) {
@@ -44,57 +68,77 @@
           display: block;
         }
       }
+      @media (max-width: 926px) {
+        .trustedby .image {
+          width: 122px;
+        }
+      }
       @media (max-width: 900px) {
         .container1_nappa {
-    justify-content: flex-start;  /* bỏ space-between, các item bám sát nhau bên trái */
-    gap: 12px;                     /* khoảng cách giữa hamburger và logo */
-  }
+          justify-content: flex-start; /* bỏ space-between, các item bám sát nhau bên trái */
+          gap: 12px; /* khoảng cách giữa hamburger và logo */
+        }
         .more {
-    display: none;
-  }
-  .register {
-    margin-left: auto;   /* đẩy .register (Log in) về sát mép phải */
-  }
-  .register .sign_up {
-    display: none;
-  }
-  .hamburger-btn {
-    display: flex;
-    align-items: center;
-  }
-  .hamburger-btn:hover {
-    background-color: rgb(237, 235, 235);
-    border-radius: 8px;
-  }
+          display: none;
+        }
+        .register {
+          margin-left: auto; /* đẩy .register (Log in) về sát mép phải */
+        }
+        .register .sign_up {
+          display: none;
+        }
+        .hamburger-btn {
+          display: flex;
+          align-items: center;
+        }
+        .hamburger-btn:hover {
+          background-color: rgb(237, 235, 235);
+          border-radius: 8px;
+        }
 
-  .register .log_in:hover {
-    background-color: rgb(237, 235, 235);
-    color: #111;
-  }
+        .register .log_in:hover {
+          background-color: rgb(237, 235, 235);
+          color: #111;
+        }
 
-  .mobile-menu-row:hover {
-    background-color: rgb(237, 235, 235);
-  }
-  .mobile-menu-detail-content div div:hover{
-    background-color: rgb(237, 235, 235);
-  }
-  .mobile-menu-detail-content div .type:hover{
-    background-color: white;
-  }
-  .mobile-menu-close:hover,
-  .mobile-menu-back:hover {
-    background-color: rgb(237, 235, 235);
-    border-radius: 8px;
-  }
+        .mobile-menu-row:hover {
+          background-color: rgb(237, 235, 235);
+        }
+        .mobile-menu-detail-content div div:hover {
+          background-color: rgb(237, 235, 235);
+        }
+        .mobile-menu-detail-content div .type:hover {
+          background-color: white;
+        }
+        .mobile-menu-close:hover,
+        .mobile-menu-back:hover {
+          background-color: rgb(237, 235, 235);
+          border-radius: 8px;
+        }
 
-  .mobile-menu-login:hover{
-    background-color: #7528e1;
-  }
-  .mobile-menu-signup:hover {
-    background-color: rgb(237, 235, 235);
-  }
-  .our_commitments {
-          padding: 64px 32px;
+        .mobile-menu-login:hover {
+          background-color: #7528e1;
+        }
+        .mobile-menu-signup:hover {
+          background-color: rgb(237, 235, 235);
+        }
+        .slogan h1 {
+          font-size: 2.5rem;
+        }
+        .info {
+          height: 290px;
+        }
+        .info span {
+          margin-bottom: 30px;
+        }
+        .info h3 {
+          font-size: 2rem;
+        }
+        .The_slick {
+          padding: 0;
+        }
+        .our_commitments {
+          padding: 48px 24px;
         }
         .commit_big {
           height: auto;
@@ -118,8 +162,10 @@
           color: #111;
           box-sizing: border-box; /* đổi màu chữ vì không còn nằm trên ảnh tối nữa */
         }
-        .commit_big h3 {
-          font-size: 21px;
+        .commit_big h3,
+        .commit_small h3 {
+          font-size: 22px;
+          font-weight: 700;
         }
 
         .commit_small {
@@ -146,14 +192,9 @@
           width: 100%;
           height: auto;
           color: #111; /* đổi từ trắng sang màu tối vì không còn trên nền ảnh tối */
-          padding: 20px 16px;
+          padding: 20px 0;
           order: 1; /* đưa content lên trên */
           align-items: center; /* giữ căn giữa chữ như thiết kế gốc */
-        }
-
-        .commit_small h3 {
-          font-size: 21px;
-          margin-bottom: 20px;
         }
 
         .commit_small p {
@@ -162,6 +203,19 @@
         .awards_section .awards_grid {
           flex-direction: column;
           align-items: center;
+        }
+        .feedback {
+          padding: 64px 32px;
+        }
+        .feedback .image {
+          width: 100%; /* full width khi xếp dọc */
+          height: 280px; /* giảm mạnh chiều cao */
+        }
+        .feedback .content {
+          width: 100%;
+        }
+        .feedback .para {
+          font-size: 18px;
         }
         .careers {
           flex-direction: column-reverse;
@@ -177,16 +231,19 @@
           align-self: center;
           padding-top: 20px;
         }
+
+        .careers h2 {
+          font-size: 24px;
+          margin-bottom: 30px;
+        }
         .newsroom .newsrom_grid {
         }
         .newsroom .box {
-          width: 47%;
+          width: 49%;
         }
+
         .our_values {
           padding-right: 0;
-        }
-        .our_values .The_slick {
-          padding: 0;
         }
         .our_values .box {
           width: 1800px;
@@ -197,52 +254,56 @@
           width: 1200px;
           height: 1686px;
         }
+
         .a_word_from_all_of_us {
           margin: 64px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    align-items: start;
-    padding: 40px 0;
-    gap: 20px;
-  }
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          justify-items: center;
+          align-items: start;
+          padding: 40px 0;
+          gap: 20px;
+        }
 
-  /* Ảnh 1: cột trái, hàng 1 */
-  .a_word_from_all_of_us .image:first-child {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    padding-bottom: 20%;
-    height: auto;
-  }
+        /* Ảnh 1: cột trái, hàng 1 */
+        .a_word_from_all_of_us .image:first-child {
+          grid-column: 1;
+          grid-row: 1;
+          width: 100%;
+          padding-bottom: 20%;
+          height: auto;
+        }
 
-  /* Ảnh 2: cột phải, hàng 1 */
-  .a_word_from_all_of_us .image:last-child {
-    grid-column: 2;
-    grid-row: 1;
-    width: 100%;
-    padding-top: 20%;
-    height: auto;
-    justify-self: end; /* đẩy sang phải giống ảnh mẫu */
-  }
+        /* Ảnh 2: cột phải, hàng 1 */
+        .a_word_from_all_of_us .image:last-child {
+          grid-column: 2;
+          grid-row: 1;
+          width: 100%;
+          padding-top: 20%;
+          height: auto;
+          justify-self: end; /* đẩy sang phải giống ảnh mẫu */
+        }
 
-  /* Content: chiếm cả 2 cột, hàng 2, nằm dưới cùng */
-  .a_word_from_all_of_us .content {
-    grid-column: 1 / 3;
-    grid-row: 2;
-    width: 100%;
-    text-align: center;
-  }
+        /* Content: chiếm cả 2 cột, hàng 2, nằm dưới cùng */
+        .a_word_from_all_of_us .content {
+          grid-column: 1 / 3;
+          grid-row: 2;
+          width: 100%;
+          text-align: center;
+        }
 
-  .a_word_from_all_of_us img {
-    height: auto;
-    object-fit: contain;
-  }
+        .a_word_from_all_of_us img {
+          height: auto;
+          object-fit: contain;
+        }
       }
       @media (max-width: 899px) {
         .our_commitments {
           padding: 32px 16px;
+        }
+        .our_commitments h2 {
+          font-size: 26px;
         }
         .commit_small {
           display: block;
@@ -259,49 +320,52 @@
           position: relative; /* bỏ vai trò "nền phủ", ảnh giờ là 1 khối bình thường */
           height: 750px; /* tuỳ chỉnh độ cao ảnh, ảnh mẫu khá cao */
         }
-
+        .commit_big .content,
         .commit_small .content {
           position: static; /* bỏ absolute, không đè lên ảnh nữa */
           width: 100%;
           height: auto;
           color: #111; /* đổi từ trắng sang màu tối vì không còn trên nền ảnh tối */
-          padding: 20px 16px;
-          order: 1; /* đưa content lên trên */
+          padding: 20px 0;
           align-items: center; /* giữ căn giữa chữ như thiết kế gốc */
+          text-align: center;
         }
 
         .commit_small h3 {
-          font-size: 21px;
           margin-bottom: 20px;
         }
 
         .commit_small p {
           color: #666; /* label "SUSTAINABILITY AT CANVA" đổi màu tối */
         }
+        .commit_big button,
+        .commit_small button {
+          border: 0.1px solid rgb(210, 210, 210);
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          background: white;
+        }
         .our_values .box {
           background-color: rgb(244, 244, 244);
           border-radius: 18px;
           display: block !important;
-          width: 310px;
-          height: 500px;
-          margin-right: 30px;
+          width: 210px;
+          height: 450px;
         }
         .our_values .box .image {
-          width: 287px;
-          height: 274px;
-          padding: 10% 5%;
+          width: 210px;
+          height: 200px;
         }
+
         .our_values {
           padding: 64px 32px;
           box-sizing: border-box;
         }
         .The_slick {
-          width: 100%; /* Chiếm trọn chiều rộng để tính toán tràn lề */
-          padding: 0 60px;
+          width: 100%;
           box-sizing: border-box;
         }
-
-        
 
         .awards_section .awards_grid {
           flex-direction: column;
@@ -313,22 +377,21 @@
         .awards_section .box:nth-child(2),
         .awards_section .box:nth-child(4) {
           width: 100%;
-          width: 500px;
           align-items: center;
         }
-        .awards_section .box:nth-child(1) .image{
+        .awards_section .box:nth-child(1) .image {
           max-width: 100px;
         }
         .awards_section .box:nth-child(5) .image {
           max-width: 90px;
         }
-        .awards_section .box:nth-child(2) .image{
+        .awards_section .box:nth-child(2) .image {
           max-width: 160px;
         }
         .awards_section .box:nth-child(3) .image {
           max-width: 140px;
         }
-        .awards_section .box:nth-child(4) .image{
+        .awards_section .box:nth-child(4) .image {
           max-width: 180px;
         }
 
@@ -338,101 +401,261 @@
         }
 
         .awards_section .content {
-          width: 100%;
         }
         .awards_section .content .p1 {
-          width: 500px;
         }
 
         .awards_section .content .p2 {
-          width: 500px;
         }
         .about {
-    display: block;
-  }
+          display: block;
+        }
 
-  .about .box1 {
-    height: auto;
-    padding: 20px 4%;
-  }
-.app-buttons {
+        .about .box1 {
+          height: auto;
+          padding: 20px 4%;
+        }
+        .app-buttons {
+          display: flex;
+          gap: 10px;
+        }
+        .app-buttons img {
+          height: 40px;
+          width: auto;
+        }
+        .box1 a {
+          padding: 0;
+          border: 0;
+          margin: 28px 0;
+        }
+        .box1 .icon {
+          display: none;
+        }
+        .box2 {
+          padding: 0 4%;
+          display: block !important; /* bỏ flex 3 cột ngang */
+        }
+
+        .menu_column {
+          display: block;
+          width: 100%;
+          gap: 0;
+        }
+
+        .menu_group {
+          border-bottom: 1px solid #eee;
+        }
+
+        .menu_group .group_title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 16px 8px;
+          font-size: 18px;
+          color: #111;
+          cursor: pointer;
+          font-weight: 500;
+        }
+        .about .fa-chevron-down {
+          display: block;
+        }
+        .accordion-icon {
+          font-size: 14px;
+          color: #999;
+          transition: transform 0.3s ease;
+        }
+
+        .menu_group.open .accordion-icon {
+          transform: rotate(180deg);
+        }
+
+        /* Ẩn danh sách con mặc định, chỉ hiện khi .open */
+        .menu_group ul {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+        }
+
+        .menu_group.open ul {
+          max-height: 600px; /* đủ lớn để chứa hết item, không cần chính xác tuyệt đối */
+        }
+
+        .menu_group ul li {
+          padding: 10px 8px;
+        }
+
+        .end {
+          display: block;
+        }
+        .end .first,
+        .end .second {
+          display: block;
+        }
+        .end .global,
+        .end .second > div {
+          padding: 24px 0;
+        }
+      }
+      @media (max-width: 752px) {
+        .trustedby .image {
+          width: 134px;
+        }
+        .feedback {
+          height: 300px;
+        }
+        .feedback .image {
+          width: 100%; /* full width khi xếp dọc */
+          height: 250px; /* giảm mạnh chiều cao */
+        }
+        .feedback .content {
+          width: 100%;
+        }
+        .feedback .para {
+          font-size: 18px;
+          margin-bottom: 5%;
+        }
+      }
+      @media (max-width: 720px) {
+        .info {
+          height: 350px;
+          padding: 48px 24px;
+        }
+        .info_achiv div {
+          width: 30%;
+          text-align: center;
+        }
+
+        .info_achiv {
+          justify-content: center; /* đổi từ space-between (kế thừa) sang center */
+          row-gap: 24px; /* khoảng cách giữa 2 hàng khi bị xuống dòng */
+          column-gap: 5%;
+        }
+      }
+      @media (max-width: 600px) {
+        .container1_nappa{
+          justify-content: space-between;
+        }
+        .main_image {
+          height: 650px;
+          padding: 4% 3%;
+        }
+
+        .slogan h1 {
+          width: 60%;
+          left: 20%;
+          top: 200px;
+          font-size: 2.2rem;
+          font-weight: 650;
+        }
+
+        .anh2 {
+          display: none;
+        }
+
+        .anh1 {
+          left: 20%;
+          top: 40px;
+          width: 20%;
+          height: 90px;
+        }
+
+        /* Ảnh góc trên-phải (tay + laptop) — to, cao */
+        .anh4 {
+          left: 50%;
+          top: -30px;
+          width: 46%;
+          height: 220px;
+        }
+
+        /* Ảnh giữa-trái (mẹ + bé) — lớn nhất */
+        .anh3 {
+          left: 1%;
+          top: 380px;
+          width: 40%;
+          height: 140px;
+        }
+
+        /* Ảnh giữa-phải (2 người phụ nữ) — cao hơn 1 chút, lệch phải */
+        .anh5 {
+          left: 78%;
+          top: 330px;
+          width: 26%;
+          height: 110px;
+        }
+
+        /* Ảnh dưới-phải (đàn ông trình bày) — nhỏ, thấp hơn */
+        .anh6 {
+          left: 55%;
+          top: 490px;
+          width: 30%;
+          height: 80px;
+        }
+
+        .our_commitments {
+        }
+        .commit_big button,
+        .commit_small button {
+          width: 100%;
+        }
+        .feedback {
+          height: auto;
+          text-align: center;
+          .tab1,
+          .tab2,
+          .tab3,
+          .tab4 {
+            flex-direction: column;
+          }
+          .image {
+            height: 100%;
+          }
+          .tabcontrol {
+            position: absolute;
+            left: 32%;
+            top: 95%;
+            display: flex;
+            gap: 15px;
+            z-index: 30;
+          }
+          .icon {
+            margin-top: 40px;
+            height: 40px;
+          }
+        }
+.newsroom_grid{
     display: flex;
-    gap: 10px;
-  }
-  .app-buttons img {
-    height: 40px;
-    width: auto;
-  }
-  .box1 a{
-    padding: 0;
-    border: 0;
-    margin: 28px 0;
-  }
-  .box1 .icon{
-    display: none;
-  }
-  .box2 {
-    padding: 0 4%;
-    display: block !important; /* bỏ flex 3 cột ngang */
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .menu_column {
-    display: block;
+  .newsroom_grid .box{
     width: 100%;
-    gap: 0;
+    h3{
+      margin: 0;
+    }
   }
 
-  .menu_group {
-    border-bottom: 1px solid #eee;
-  }
-
-  .menu_group .group_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 8px;
-    font-size: 18px;
-    color: #111;
-    cursor: pointer;
-    font-weight: 500;
-  }
-
-  .accordion-icon {
-    font-size: 14px;
-    color: #999;
-    transition: transform 0.3s ease;
-  }
-
-  .menu_group.open .accordion-icon {
-    transform: rotate(180deg);
-  }
-
-  /* Ẩn danh sách con mặc định, chỉ hiện khi .open */
-  .menu_group ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  .menu_group.open ul {
-    max-height: 600px; /* đủ lớn để chứa hết item, không cần chính xác tuyệt đối */
-  }
-
-  .menu_group ul li {
-    padding: 10px 8px;
-  }
-
-  .end {
-    display: block;
-  }
-  .end .first,
-  .end .second{
-    display: block;
-  }
-  .end .global,
-  .end .second > div{
-    padding: 24px 0;
-  }
+      }
+      @media (max-width: 560px) {
+        .logos_trustedby{
+          gap: 3.2%;
+        }
+.trustedby .image {
+          width: 138px;
+        }
+      }
+      @media (max-width: 546px) {
+        .info_achiv div {
+          width: 45%;
+        }
+      }
+      @media (max-width: 546px) {
+        .info_achiv div {
+          width: 100%;
+        }
+.trustedby .image {
+          width: 139px;
+        }
       }
     </style>
   </head>
@@ -440,8 +663,8 @@
   <body>
     <div class="container1_nappa">
       <button class="hamburger-btn" aria-label="Menu">
-    <i class="fa-solid fa-bars"></i>
-  </button>
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <div class="logo">
         <img
           alt=""
@@ -791,11 +1014,11 @@
       </div>
     </div>
     <div class="info">
-      <p>
+      <span>
         Launched in 2013, Canva is an online design and publishing tool with a
         mission to empower everyone in the world to design anything and publish
         anywhere.
-      </p>
+      </span>
       <div class="info_achiv">
         <div>
           <h3>200M+</h3>
@@ -1322,11 +1545,21 @@
       <div class="box1">
         <div>Download Canva for free</div>
         <div class="app-buttons">
-    <a href="#">
-<img class="eieNhW7" alt="" src="https://content-management-files.canva.com/6122da46-4357-4423-a18e-35bee4a9a33e/GetItOnGooglePlay_Badge_Web_color.svg">    </a>
-    <a href="#">
-<img class="eieNhW7" alt="" src="https://content-management-files.canva.com/38c1cf77-57db-46b6-8d00-82a93ecf99ac/Download_on_the_App_Store_Badge.svg">    </a>
-  </div>
+          <a href="#">
+            <img
+              class="eieNhW7"
+              alt=""
+              src="https://content-management-files.canva.com/6122da46-4357-4423-a18e-35bee4a9a33e/GetItOnGooglePlay_Badge_Web_color.svg"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="eieNhW7"
+              alt=""
+              src="https://content-management-files.canva.com/38c1cf77-57db-46b6-8d00-82a93ecf99ac/Download_on_the_App_Store_Badge.svg"
+            />
+          </a>
+        </div>
         <div class="icon">
           <span>
             <a href="">Windows</a>
@@ -1519,6 +1752,44 @@
         <p>© 2026 All Rights Reserved</p>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btnMores = document.querySelectorAll(".btn_more");
+        const margin = 16; // khoảng cách tối thiểu giữ với mép màn hình
+
+        function positionDropdown(btn) {
+          const dropdown = btn.querySelector(".hidden");
+          if (!dropdown) return;
+
+          const btnRect = btn.getBoundingClientRect();
+          const dropdownWidth = dropdown.offsetWidth;
+
+          // Vị trí lý tưởng: canh giữa dropdown theo tâm nút đang hover
+          let left = btnRect.left + btnRect.width / 2 - dropdownWidth / 2;
+
+          // Nếu bị tràn bên trái → kéo sát vào lề trái (đúng yêu cầu của bạn)
+          if (left < margin) {
+            left = margin;
+          }
+
+          // Nếu bị tràn bên phải → kéo sát vào lề phải
+          const maxLeft = window.innerWidth - dropdownWidth - margin;
+          if (left > maxLeft) {
+            left = maxLeft;
+          }
+
+          dropdown.style.left = left + "px";
+        }
+
+        btnMores.forEach((btn) => {
+          btn.addEventListener("mouseenter", () => positionDropdown(btn));
+        });
+
+        window.addEventListener("resize", () => {
+          btnMores.forEach((btn) => positionDropdown(btn));
+        });
+      });
+    </script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -1528,29 +1799,35 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".menu_group .group_title").forEach((title) => {
-    title.addEventListener("click", () => {
-      const group = title.closest(".menu_group");
-      group.classList.toggle("open");
-    });
-  });
-});
-</script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(".menu_group .group_title")
+          .forEach((title) => {
+            title.addEventListener("click", () => {
+              const group = title.closest(".menu_group");
+              group.classList.toggle("open");
+            });
+          });
+      });
+    </script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const categories = [
-      { key: "design", label: "Design", selector: ".hidden_design" },
-      { key: "product", label: "Product", selector: ".hidden_product" },
-      { key: "plans", label: "Plans", selector: ".hidden_plans" },
-      { key: "business", label: "Business", selector: ".hidden_business" },
-      { key: "education", label: "Education", selector: ".hidden_education" },
-      { key: "help", label: "Help", selector: ".hidden_help" },
-    ];
+      document.addEventListener("DOMContentLoaded", function () {
+        const categories = [
+          { key: "design", label: "Design", selector: ".hidden_design" },
+          { key: "product", label: "Product", selector: ".hidden_product" },
+          { key: "plans", label: "Plans", selector: ".hidden_plans" },
+          { key: "business", label: "Business", selector: ".hidden_business" },
+          {
+            key: "education",
+            label: "Education",
+            selector: ".hidden_education",
+          },
+          { key: "help", label: "Help", selector: ".hidden_help" },
+        ];
 
-    const overlay = document.createElement("div");
-    overlay.className = "mobile-menu-overlay";
-    overlay.innerHTML = `
+        const overlay = document.createElement("div");
+        overlay.className = "mobile-menu-overlay";
+        overlay.innerHTML = `
       <div class="mobile-menu-backdrop"></div>
       <div class="mobile-menu-panel">
         <div class="mobile-menu-list">
@@ -1566,7 +1843,7 @@
               <button class="mobile-menu-row" data-category="${c.key}">
                 <span>${c.label}</span>
                 <i class="fa-solid fa-chevron-right"></i>
-              </button>`
+              </button>`,
               )
               .join("")}
           </div>
@@ -1586,41 +1863,49 @@
         </div>
       </div>
     `;
-    document.body.appendChild(overlay);
+        document.body.appendChild(overlay);
 
-    const hamburgerBtn = document.querySelector(".hamburger-btn");
-    const panel = overlay.querySelector(".mobile-menu-panel");
-    const detailTitle = overlay.querySelector(".mobile-menu-detail-title");
-    const detailContent = overlay.querySelector(".mobile-menu-detail-content");
+        const hamburgerBtn = document.querySelector(".hamburger-btn");
+        const panel = overlay.querySelector(".mobile-menu-panel");
+        const detailTitle = overlay.querySelector(".mobile-menu-detail-title");
+        const detailContent = overlay.querySelector(
+          ".mobile-menu-detail-content",
+        );
 
-    hamburgerBtn.addEventListener("click", () => {
-      overlay.classList.add("open");
-      panel.classList.remove("show-detail");
-    });
+        hamburgerBtn.addEventListener("click", () => {
+          overlay.classList.add("open");
+          panel.classList.remove("show-detail");
+        });
 
-    overlay.querySelector(".mobile-menu-close").addEventListener("click", () => {
-      overlay.classList.remove("open");
-    });
+        overlay
+          .querySelector(".mobile-menu-close")
+          .addEventListener("click", () => {
+            overlay.classList.remove("open");
+          });
 
-    overlay.querySelector(".mobile-menu-backdrop").addEventListener("click", () => {
-      overlay.classList.remove("open");
-    });
+        overlay
+          .querySelector(".mobile-menu-backdrop")
+          .addEventListener("click", () => {
+            overlay.classList.remove("open");
+          });
 
-    overlay.querySelectorAll(".mobile-menu-row").forEach((row) => {
-      row.addEventListener("click", () => {
-        const cat = categories.find((c) => c.key === row.dataset.category);
-        const sourcePanel = document.querySelector(cat.selector);
-        detailTitle.textContent = cat.label;
-        detailContent.innerHTML = sourcePanel ? sourcePanel.innerHTML : "";
-        panel.classList.add("show-detail");
+        overlay.querySelectorAll(".mobile-menu-row").forEach((row) => {
+          row.addEventListener("click", () => {
+            const cat = categories.find((c) => c.key === row.dataset.category);
+            const sourcePanel = document.querySelector(cat.selector);
+            detailTitle.textContent = cat.label;
+            detailContent.innerHTML = sourcePanel ? sourcePanel.innerHTML : "";
+            panel.classList.add("show-detail");
+          });
+        });
+
+        overlay
+          .querySelector(".mobile-menu-back")
+          .addEventListener("click", () => {
+            panel.classList.remove("show-detail");
+          });
       });
-    });
-
-    overlay.querySelector(".mobile-menu-back").addEventListener("click", () => {
-      panel.classList.remove("show-detail");
-    });
-  });
-</script>
+    </script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
@@ -1675,17 +1960,37 @@
     <script>
       const buttons = document.querySelectorAll(".tabcontrol button");
       const tabs = document.querySelectorAll(".tab1,.tab2,.tab3,.tab4");
+      let currentTab = 1;
+      const totalTabs = tabs.length;
+
       function showTab(number) {
         tabs.forEach((tab) => {
-          tab.style.display = "none";
+          tab.classList.remove("active");
         });
-        document.querySelector(".tab" + number).style.display = "flex";
+        document.querySelector(".tab" + number).classList.add("active");
         buttons.forEach((btn) => {
           btn.classList.remove("selected");
         });
         buttons[number - 1].classList.add("selected");
+        currentTab = number;
       }
       showTab(1);
+
+      let autoSlide = setInterval(nextTab, 5000);
+
+      function nextTab() {
+        let next = currentTab + 1;
+        if (next > totalTabs) next = 1;
+        showTab(next);
+      }
+
+      const feedbackSection = document.querySelector(".feedback");
+      feedbackSection.addEventListener("mouseenter", () => {
+        clearInterval(autoSlide);
+      });
+      feedbackSection.addEventListener("mouseleave", () => {
+        autoSlide = setInterval(nextTab, 5000);
+      });
     </script>
     <script src="js/wow.min.js"></script>
     <script>

@@ -656,6 +656,7 @@ button:hover {
   height: 100%;
   object-fit: cover;
   border-radius: 24px;
+  max-height: 580px;
 }
 .commit_small .content {
   box-sizing: border-box;

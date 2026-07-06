@@ -330,20 +330,21 @@
           font-size: 26px;
         }
         .commit_small {
-          display: block;
+          display: contents;
+          
         }
 
         .commit_small > div {
           width: 100%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
+          aspect-ratio:auto;
+    height:auto;
         }
 
         .commit_small img {
-          position: relative; /* bỏ vai trò "nền phủ", ảnh giờ là 1 khối bình thường */
-          height: 750px; /* tuỳ chỉnh độ cao ảnh, ảnh mẫu khá cao */
+          position: relative; 
+          height: 720px;
         }
+        
         .commit_big .content,
         .commit_small .content {
           position: static; /* bỏ absolute, không đè lên ảnh nữa */

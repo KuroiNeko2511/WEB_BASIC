@@ -209,8 +209,9 @@
   background-color: white;
   border: 0;
   font-weight: 500;
+  font-size: 14px;
   border-radius: 8px;
-  color: #0d1216;
+  color: rgb(48, 48, 48);
   border-radius: 10px;
   transition: 0.5s;
 }
@@ -617,21 +618,21 @@
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 .commit_big h3 {
-  font-size: 37px;
+  font-size: 36px;
   /* line-height: 1.2; */
 font-weight: 600;
-  margin-bottom: 25px;
+  margin: 0;
 }
 .commit_big button,
 .commit_small button {
   width: max-content;
-  padding: 12px 20px;
+  padding: 10px 14px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   background: rgb(250, 249, 249);
 }
@@ -641,12 +642,11 @@ button:hover {
 .commit_small {
   display: flex;
   gap: 20px;
-  height: 520px;
 }
 .commit_small > div {
   position: relative;
   width: 50%;
-  height: 520px;
+  height: 580px;
 }
 .commit_small img {
   width: 100%;
@@ -671,11 +671,10 @@ button:hover {
   z-index: 2;
 }
 .commit_small h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
   width: 100%;
   
-  font-size: 37px;
+  font-size: 36px;
 font-weight: 600;
 }
 
@@ -860,7 +859,6 @@ font-weight: 600;
       display: flex;
       justify-content: space-between;
       background-color: #3b1680;
-      align-items: stretch;
       margin: 0% 7%;
       border-radius: 18px;
       gap: 5px;

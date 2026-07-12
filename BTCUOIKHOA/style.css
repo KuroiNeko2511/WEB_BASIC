@@ -189,6 +189,8 @@
 .mobile-menu-detail-content div div {
   padding: 12px 8px;
   font-weight: 500;
+  border-radius: 10px;
+
 }
 .hide {
   transition: 0.3s;
